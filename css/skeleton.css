@@ -135,6 +135,7 @@ html {
   -webkit-font-smoothing: antialiased;}
 
 body {
+  margin:0;
   font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.5;
   font-weight: 400;
@@ -173,7 +174,7 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
   h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
-  
+
 }
 /* Larger than phablet */
 @media (min-width: 550px) {
