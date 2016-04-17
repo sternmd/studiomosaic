@@ -103,7 +103,7 @@
 @media (max-width: 550px) and (min-width: 0px) {
   .nav-bottom{
     position: absolute;
-    top: 5%;
+    top: 8%;
     left: 78%;
     right: 0%;
     display: block;
@@ -181,7 +181,7 @@
   .nav-right {
     position: absolute;
     display: block;
-    top: 5%;
+    top: 8%;
     left: 2%;
     right: 88%;
     -webkit-transform: rotate(0deg);
