@@ -199,6 +199,28 @@
     }
 }
 
+/* Switching out album art on mobile
+   ========================================================================== */
+
+.resize-left {
+ display: none;
+}
+
+@media (max-width: 550px) and (min-width: 0px) {
+  .resize-left {
+    display: block;
+  }
+}
+
+@media (max-width: 550px) and (min-width: 0px) {
+  .resize-right {
+    display: none;
+  }
+  .artist-name {
+    text-align: center;
+  }
+}
+
 
 .tracklist {
   font-family: 'atc_harrisregular';
@@ -270,6 +292,8 @@ color: rgb(88, 88, 88);
   .grid-sizer { width: 100%; }
   .grid-item { width: 100%; }
 }
+
+
 
 /* Masonry Blog
    ========================================================================== */
