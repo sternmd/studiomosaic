@@ -30,7 +30,7 @@
   .mobile-logo {
     position: absolute;
     top: 25px;
-    left: 38%;
+    left: 37%;
     width: 110px;
     z-index: 3;
   }
@@ -80,7 +80,7 @@
     margin: auto;
     position: absolute;
     font-size: 50px;
-    top: 30%; left: 0; bottom: 0; right: 20%;
+    top: 30%; left: 0; bottom: 0; right: 23%;
     }
   }
 
@@ -115,7 +115,7 @@
     margin: auto;
     position: absolute;
     font-size: 50px;
-    top: 75%; left: 0; bottom: 0; right: 20%;
+    top: 75%; left: 0; bottom: 0; right: 23%;
     }
 }
 
@@ -155,7 +155,7 @@
     margin: auto;
     position: absolute;
     font-size: 50px;
-    top: 45%; left: 0; bottom: 0; right: 30%;
+    top: 45%; left: 0; bottom: 0; right: 33%;
     }
 }
 
@@ -195,7 +195,7 @@
     margin: auto;
     position: absolute;
     font-size: 50px;
-    top: 60%; left: 0; bottom: 0; right: 30%;
+    top: 60%; left: 0; bottom: 0; right: 33%;
     }
 }
 
