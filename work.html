@@ -97,20 +97,25 @@
 </div><!-- close container -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 <script src="js/masonry.pkgd.min.js"></script>
 <script src="js/app.min.js"></script>
 
 <script type="text/javascript">
 
 // MASONRY GRID
-$('.grid').masonry({
-  // set itemSelector so .grid-sizer is not used in layout
-  itemSelector: '.grid-item',
-  // use element for option
-  columnWidth: '.grid-sizer',
-  percentPosition: true
+$(document).ready(function() {
+  var $container = $('.grid');
+  $container.imagesLoaded( function() {
+    $('.grid').masonry({
+      // set itemSelector so .grid-sizer is not used in layout
+      itemSelector: '.grid-item',
+      // use element for option
+      columnWidth: '.grid-sizer',
+      percentPosition: true
+    });
+  });
 });
-
 
 // ONCLICK MUSIC FILTER
 $(".musics").click(function() {

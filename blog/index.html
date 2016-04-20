@@ -85,18 +85,24 @@
 </div><!-- close container -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 <script src="../js/masonry.pkgd.min.js"></script>
 <script src="../js/app.min.js"></script>
 
 <script type="text/javascript">
 
 // MASONRY GRID
-$('.gridblog').masonry({
-  // set itemSelector so .gridblog-sizer is not used in layout
-  itemSelector: '.gridblog-item',
-  // use element for option
-  columnWidth: '.gridblog-sizer',
-  percentPosition: true
+$(document).ready(function() {
+  var $container = $('.gridblog');
+  $container.imagesLoaded( function() {
+    $('.gridblog').masonry({
+      // set itemSelector so .gridblog-sizer is not used in layout
+      itemSelector: '.gridblog-item',
+      // use element for option
+      columnWidth: '.gridblog-sizer',
+      percentPosition: true
+    });
+  });
 });
 
 // ONCLICK MUSIC FILTER
