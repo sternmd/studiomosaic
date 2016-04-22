@@ -85,6 +85,7 @@
     position: absolute;
     font-size: 50px;
     top: 30%; left: 0; bottom: 0; right: 23%;
+    text-align: center;
     }
   }
 
@@ -119,7 +120,9 @@
     margin: auto;
     position: absolute;
     font-size: 50px;
-    top: 75%; left: 0; bottom: 0; right: 23%;
+    top: 75%; left: 0; bottom: 0;
+    right: 23%;
+    text-align: center;
     }
 }
 
@@ -155,11 +158,12 @@
 }
 
 @media (max-width: 550px) and (min-width: 0px) {
-  .mobile-about{
+  .mobile-about {
     margin: auto;
     position: absolute;
     font-size: 50px;
     top: 45%; left: 0; bottom: 0; right: 33%;
+    text-align: center;
     }
 }
 
@@ -200,6 +204,7 @@
     position: absolute;
     font-size: 50px;
     top: 60%; left: 0; bottom: 0; right: 33%;
+    text-align: center;
     }
 }
 
@@ -245,12 +250,8 @@ color: rgb(88, 88, 88);
 
 .studio {
   font-family: 'rasmusregular';
-  /*text-align: center;*/
   font-size: 78px;
-  /*position:absolute;
-  margin-top: 25%;
-  margin-left: 22%;*/
-  z-index:1;
+  z-index:0;
   width: 600px;
   height: 100px;
   position: fixed;
@@ -259,6 +260,13 @@ color: rgb(88, 88, 88);
   margin-top: -50px;
   margin-left: -300px;
 }​
+
+@media (max-width: 550px) and (min-width: 0px) {
+  .studio{
+  display: none;
+  z-index:-5;
+  }
+}
 
 /* Masonry
    ========================================================================== */
