@@ -37,6 +37,7 @@ Old About Page:
 ![wordpress about](http://s32.postimg.org/7ovhr27b8/Screen_Shot_2016_04_10_at_6_33_00_PM.jpg)
 ___
 **New Mobile Homepage:**
+
 ![studio mobile](http://s32.postimg.org/74dakag05/Screen_Shot_2016_04_15_at_11_37_25_PM.png)
 
 
