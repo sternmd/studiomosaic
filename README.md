@@ -6,7 +6,7 @@ About: A passion project for a Chicago-based art collective that I am part of. S
 Technologies used: HTML5/CSS3, Javascript, jQuery, Skeleton, Masonry.js.
 
 ## REVISIONS / REDESIGNS
-**I built the original version in 2014 with Wordpress, but wanted to fully redesign the site from scratch, no CMS attached.**
+**I built the original site in 2014 with Wordpress, but wanted to fully redesign the site from scratch, no CMS attached.**
 
 **New Homepage:**
  ![studio logo](http://s32.postimg.org/a7qyv9e6c/Screen_Shot_2016_05_05_at_10_53_20_AM.jpg)
