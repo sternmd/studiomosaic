@@ -1,0 +1,594 @@
+.explode span {
+  position: relative;
+  transition: 0.3s .1s;
+  top:0;
+  left:0;
+}
+
+.logo {
+  display: block;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  width: 100px;
+  height: auto;
+  z-index: 100;
+}
+
+/*.logo a:hover {
+  background-image:url("images/studiomosaiclogo_hover.svg")
+}*/
+
+@media (max-width: 550px) and (min-width: 0px) {
+  .logo {
+    position: absolute;
+    top: 15px;
+    left: 42%;
+    width: 65px;
+    height: auto;
+    z-index: 3;
+  }
+}
+
+@media (max-width: 550px) and (min-width: 0px) {
+  .mobile-logo {
+    position: absolute;
+    top: 25px;
+    left: 37%;
+    width: 110px;
+    z-index: 3;
+  }
+}
+
+
+@media (max-width: 768px) and (min-width: 555px) {
+  .logo {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 60px;
+    height: auto;
+    z-index: 3;
+  }
+}
+
+.nav-top {
+  position: fixed;
+  display: block;
+  width: 20px;
+  top: 2%;
+  left: 0%;
+  right: 0;
+  z-index: 1;
+  margin: 0 auto;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+  font-family: 'atc_harrisregular';
+}
+
+@media (max-width: 550px) and (min-width: 0px) {
+  .nav-top{
+    position: absolute;
+    display: block;
+    top: 2%;
+    left: 78%;
+    right: 0%;
+  }
+}
+
+/* Mobile Hompage Navigation
+   ========================================================================== */
+
+
+@media (max-width: 550px) and (min-width: 0px) {
+  .mobile-work{
+    margin: auto;
+    position: absolute;
+    font-size: 50px;
+    top: 30%; left: 0; bottom: 0; right: 23%;
+    text-align: center;
+    }
+  }
+
+.nav-bottom {
+  position: fixed;
+  width: 20px;
+  display: block;
+  bottom: 2%;
+  left: 0%;
+  right: 0;
+  z-index: 1;
+  margin: 0 auto;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+  font-family: 'atc_harrisregular';
+}
+
+@media (max-width: 550px) and (min-width: 0px) {
+  .nav-bottom{
+    position: absolute;
+    top: 8%;
+    left: 78%;
+    right: 0%;
+    display: block;
+  }
+}
+
+@media (max-width: 550px) and (min-width: 0px) {
+  .mobile-blog{
+    margin: auto;
+    position: absolute;
+    font-size: 50px;
+    top: 75%; left: 0; bottom: 0;
+    right: 23%;
+    text-align: center;
+    }
+}
+
+.nav-left {
+  -webkit-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  position: fixed;
+  width: 20px;
+  display: block;
+  top: 50%;
+  left: 2%;
+  z-index: 1;
+  margin: 0 auto;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+  font-family: 'atc_harrisregular';
+}
+
+@media (max-width: 550px) and (min-width: 0px) {
+  .nav-left {
+    position: absolute;
+    display: block;
+    top: 2%;
+    left: 2%;
+    right: 88%;
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 550px) and (min-width: 0px) {
+  .mobile-about {
+    margin: auto;
+    position: absolute;
+    font-size: 50px;
+    top: 45%; left: 0; bottom: 0; right: 33%;
+    text-align: center;
+    }
+}
+
+.nav-right {
+  -webkit-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  position: fixed;
+  width: 20px;
+  display: block;
+  top: 46%;
+  right: 2%;
+  z-index: 1;
+  margin: 0 auto;
+  font-size: 1em;
+  text-align: center;
+  text-decoration: underline;
+  color: rgb(255, 255, 255);
+  font-family: 'atc_harrisregular';
+}
+
+@media (max-width: 550px) and (min-width: 0px) {
+  .nav-right {
+    position: absolute;
+    display: block;
+    top: 8%;
+    left: 2%;
+    right: 88%;
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+  }
+}
+
+@media (max-width: 550px) and (min-width: 0px) {
+  .mobile-apply{
+    margin: auto;
+    position: absolute;
+    font-size: 50px;
+    top: 60%; left: 0; bottom: 0; right: 33%;
+    text-align: center;
+    }
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 780px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+  .mobile-work{
+    margin: auto;
+    position: absolute;
+    font-size: 50px;
+    top: 43%;
+    right: 80%;
+    bottom: 0;
+    text-align: center;
+  }
+
+  .mobile-blog{
+    margin: auto;
+    position: absolute;
+    font-size: 50px;
+    top: 43%;
+    left: 53%;
+    bottom: 0;
+    text-align: center;
+  }
+
+  .mobile-about {
+    margin: auto;
+    position: absolute;
+    font-size: 50px;
+    top: 43%;
+    left: 0;
+    bottom: 0;
+    right: 33%;
+    text-align: center;
+  }
+
+  .mobile-apply {
+    margin: auto;
+    position: absolute;
+    font-size: 50px;
+    top: 60%;
+    left: 0;
+    bottom: 0;
+    right: 33%;
+    text-align: center;
+  }
+
+  .nav-right {
+    position: absolute;
+    display: block;
+    top: 43%;
+    left: 39%;
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+  }
+
+  .nav-left {
+    position: absolute;
+    display: block;
+    top: 43%;
+    left: 0%;
+    right: 40%;
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+  }
+
+  .mobile-logo {
+    position: absolute;
+    top: 25px;
+    left: 41%;
+    width: 110px;
+    z-index: 3;
+  }
+
+  .studio{
+  display: none;
+  z-index:-5;
+  }
+
+  .char{
+    display: none;
+    }
+    #wrap img.bgfade{
+    display: none;
+    position: absolute;
+    top:20%;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 70%;
+    }
+
+    #wrap {
+      display: none;
+    }
+}
+
+/* Switching out album art on mobile
+   ========================================================================== */
+
+.resize-left {
+ display: none;
+}
+
+@media (max-width: 550px) and (min-width: 0px) {
+  .resize-left {
+    display: block;
+  }
+}
+
+@media (max-width: 550px) and (min-width: 0px) {
+  .resize-right {
+    display: none;
+  }
+  .artist-name {
+    text-align: center;
+  }
+}
+
+
+.tracklist {
+  font-family: 'atc_harrisregular';
+  font-size: .8rem;
+  text-align: justify;
+}
+
+.clicked {
+color: rgb(88, 88, 88);
+}
+
+.books,
+.musics,
+.events,
+.prints {
+  text-decoration: none;
+}
+
+.studio {
+  font-family: 'rasmusregular';
+  font-size: 78px;
+  z-index:0;
+  width: 600px;
+  height: 100px;
+  position: fixed;
+  top: 50%;
+  left: 56%;
+  margin-top: -50px;
+  margin-left: -300px;
+}​
+
+@media (max-width: 550px) and (min-width: 0px) {
+  .studio{
+  display: none;
+  z-index:-5;
+  }
+}
+
+/* Masonry
+   ========================================================================== */
+ * {
+-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+
+.grid {
+  /*max-width: 1200px;*/
+  margin-left:  4%;
+  margin-right: 5%;
+}
+
+
+.grid-sizer,
+.grid-item { width: 25%;
+            padding: 10px;
+            box-sizing: border-box;}
+
+.grid-item--width2 { width: 40%; }
+
+@media screen and (max-width: 1200px) {
+  .grid-sizer { width: 25%; }
+  .grid-item { width: 25%; }
+}
+
+@media screen and (max-width: 720px) {
+  .grid-sizer { width: 50%; }
+  .grid-item { width: 50%; }
+}
+
+@media screen and (max-width: 480px) {
+  .grid-sizer { width: 100%; }
+  .grid-item { width: 100%; }
+}
+
+
+
+/* Masonry Blog
+   ========================================================================== */
+ * {
+-webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+        box-sizing: border-box;
+}
+
+.gridblog {
+  /*max-width: 1200px;*/
+  margin-left:  4%;
+  margin-right: 5%;
+}
+
+
+.gridblog-sizer,
+.gridblog-item { width: 50%;
+            padding: 10px;
+            box-sizing: border-box;}
+
+.gridblog-item--width2 { width: 40%; }
+
+@media screen and (max-width: 1200px) {
+  .gridblog-sizer { width: 50%; }
+  .gridblog-item { width: 50%; }
+}
+
+@media screen and (max-width: 720px) {
+  .gridblog-sizer { width: 50%; }
+  .gridblog-item { width: 50%; }
+}
+
+@media screen and (max-width: 480px) {
+  .gridblog-sizer { width: 100%; }
+  .gridblog-item { width: 100%; }
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  color: #fff;
+  display: none;
+}
+
+.overlay .title {
+  text-align: center;
+  margin-top: 15%;
+  font-size: 25px;
+  color: white;
+}
+
+.overlay .description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.80);
+  width: 100%;
+  margin: 0;
+}
+
+.overlay .description p {
+  margin: 20px;
+  color: white;
+}
+
+.grid-item:hover .overlay {
+    display: block;
+}
+
+.gridblog-item:hover .overlay {
+    display: block;
+}
+
+
+
+/* Wavy Text
+======================================================= */
+
+.char {
+  position:relative;
+  letter-spacing: -0.3em;
+}
+
+@media (max-width: 550px) and (min-width: 0px) {
+  .char{
+    display: none;
+    }
+}
+
+.space {
+  position:relative;
+  letter-spacing: -0.3em;
+  color: black;
+  z-index: -99;
+  opacity: 0;
+}
+
+.char:nth-child(8n) {
+  animation: wavetext 4s 0s infinite;
+  -webkit-animation: wavetext 4s 0s infinite;
+}
+.char:nth-child(8n+1) {
+  animation: wavetext 4s -0.5s infinite;
+  -webkit-animation: wavetext 4s -0.5s infinite;
+}
+.char:nth-child(8n+2) {
+  animation: wavetext 4s -1s infinite;
+  -webkit-animation: wavetext 4s -1s infinite;
+}
+.char:nth-child(8n+3) {
+  animation: wavetext 4s -1.5s infinite;
+  -webkit-animation: wavetext 4s -1.5s infinite;
+}
+.char:nth-child(8n+4) {
+  animation: wavetext 4s -2s infinite;
+  -webkit-animation: wavetext 4s -2s infinite;
+}
+.char:nth-child(8n+5) {
+  animation: wavetext 4s -2.5s infinite;
+  -webkit-animation: wavetext 4s -2.5s infinite;
+}
+.char:nth-child(8n+6) {
+  animation: wavetext 4s -3s infinite;
+  -webkit-animation: wavetext 4s -3s infinite;
+}
+.char:nth-child(8n+7) {
+  animation: wavetext 4s -3.5s infinite;
+  -webkit-animation: wavetext 4s -3.5s infinite;
+}
+@keyframes wavetext {
+  0%, 100% { top: 0em; } 50% { top: 0.25em; }
+}
+@-webkit-keyframes wavetext {
+  0%, 100% { top: 0em; } 50% { top: 0.25em; }
+}
+
+/* Homepage Background
+======================================================= */
+#wrap{
+	position:fixed;
+	z-index:-1;
+	top:0;
+	left:0;
+	background-color:black;
+}
+
+#wrap img.bgfade{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index:-1;
+  display:none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* Preserve aspect ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+@media (max-width: 550px) and (min-width: 0px) {
+  #wrap img.bgfade{
+  display: hidden;
+  position: absolute;
+  top:20%;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 70%;
+  }
+  #wrap {
+    display: none;
+  }
+}
