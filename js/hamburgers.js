@@ -165,7 +165,7 @@
 
       Hamburgers.headerAnimate();
 
-      document.querySelector(".js-hint").addEventListener("click", Hamburgers.hintHandle, false);
+      // document.querySelector(".js-hint").addEventListener("click", Hamburgers.hintHandle, false);
     },
 
     clickHandle: function(e) {

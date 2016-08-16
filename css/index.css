@@ -15,31 +15,18 @@
   z-index: 100;
 }
 
-/*.logo a:hover {
-  background-image:url("images/studiomosaiclogo_hover.svg")
-}*/
-
 @media (max-width: 550px) and (min-width: 0px) {
-  .logo {
-    position: absolute;
+  .mobile-logo {
+    position: fixed;
     top: 15px;
     left: 42%;
     width: 65px;
-    height: auto;
-    z-index: 3;
+    z-index: 100;
   }
-}
 
-@media (max-width: 550px) and (min-width: 0px) {
-  .mobile-logo {
-    position: absolute;
-    top: 25px;
-    left: 37%;
-    width: 110px;
-    z-index: 3;
-  }
+.hamburger {
+  display: none;
 }
-
 
 @media (max-width: 768px) and (min-width: 555px) {
   .logo {
@@ -48,7 +35,7 @@
     right: 15px;
     width: 60px;
     height: auto;
-    z-index: 3;
+    z-index: 100;
   }
 }
 
@@ -78,9 +65,8 @@
   }
 }
 
-/* Mobile Hompage Navigation
+/* Mobile Homepage Navigation
    ========================================================================== */
-
 
 @media (max-width: 550px) and (min-width: 0px) {
   .mobile-work{
@@ -212,6 +198,7 @@
 }
 
 /* Landscape */
+
 @media only screen
   and (min-device-width: 320px)
   and (max-device-width: 780px)
@@ -286,7 +273,7 @@
     top: 25px;
     left: 41%;
     width: 110px;
-    z-index: 3;
+    z-index: 100;
   }
 
   .studio{
@@ -333,7 +320,6 @@
     text-align: center;
   }
 }
-
 
 .tracklist {
   font-family: 'atc_harrisregular';

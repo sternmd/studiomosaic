@@ -7,7 +7,8 @@
     background-color: #000;
     z-index: 99;
     opacity: 0;
-    visibility: hidden;
+    visibility:hidden;
+    /*pointer-events: none;*/
     display: table;
     transition: opacity .25s ease-in-out;
     -moz-transition: opacity .25s ease-in-out;
@@ -35,16 +36,42 @@
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
     .menu {
-      font-size:4.5rem;
+      font-size:5rem;
     }
 
 }
 
 .fade {
   opacity: 1;
-  visibility: visible;
+  visibility:visible;
   transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;
   -webkit-transition: opacity .25s ease-in-out;
+}
 
+/* Display menu on index in mobile view*/
+
+@media (max-width: 550px) and (min-width: 0px) {
+  .hamburger {
+    display: none;
+  }
+
+  .menu {
+    opacity:1;
+  }
+}
+
+@media only screen
+  and (min-device-width: 320px)
+  and (max-device-width: 780px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    .menu {
+      font-size:4.5rem;
+      opacity:1;
+    }
+
+    .hamburger {
+      display:none;
+    }
 }
