@@ -8,7 +8,9 @@
   <link rel="icon" href="images/favicon.ico">
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/skeleton.min.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/hamburgers.min.css">
+  <link rel="stylesheet" href="css/menu.min.css">
 
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -23,13 +25,26 @@
 </head>
 
 <body>
-  <div class="nav-top"><a href="work"><p>WORK</p></a></div>
-  <div class="nav-left"><a href="about"><p>ABOUT</p></a></div>
-  <div class="nav-right"><a href="contact"><p>APPLY</p></a></div>
-  <div class="nav-bottom"><a href="blog/"><p>BLOG</p></a></div>
+
  <div><a href="/"><img class="logo" src="images/studiomosaiclogo.svg"></a></div>
 
+ <nav class="menu">
+       <ul class="list">
+         <li><a href="work">Work</a></li>
+         <li><a href="about">About</a></li>
+         <li><a href="contact">Contact</a></li>
+         <li><a href="blog/">Blog</a></li>
+       </ul>
+ </nav>
+
   <div class="container">
+
+    <button class="hamburger hamburger--squeeze" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
     <div class="row">
       <div class="six columns">
         <h1>Collaborate</h1>
@@ -48,12 +63,13 @@
         <p>(+847) 757 2267 / 41°57′58″N 87°35′28″W / Chicago, IL</p>
         <hr>
         <p></p>
-      </div><!-- close column -->
-    </div><!-- close row -->
-  </div><!-- close container -->
+      </div>
+    </div>
+  </div>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-  <script type="text/javascript" src=js/app.min.js></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/app.min.js"></script>
+<script type="text/javascript" src="js/hamburgers.min.js"></script>
 
 </body>
 </html>

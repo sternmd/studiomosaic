@@ -8,7 +8,6 @@
     z-index: 99;
     opacity: 0;
     visibility:hidden;
-    /*pointer-events: none;*/
     display: table;
     transition: opacity .25s ease-in-out;
     -moz-transition: opacity .25s ease-in-out;
@@ -58,6 +57,7 @@
 
   .menu {
     opacity:1;
+    visibility: visible;
   }
 }
 
@@ -69,6 +69,7 @@
     .menu {
       font-size:4.5rem;
       opacity:1;
+      visibility: visible;
     }
 
     .hamburger {

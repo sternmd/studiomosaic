@@ -1,4 +1,4 @@
-// FADE IN
+// Fade In
 $("p").addClass("load");
 $("h1").addClass("load");
 $("h2").addClass("load");
@@ -6,7 +6,7 @@ $("h3").addClass("load");
 $("span .char").addClass("load");
 $("hr").addClass("load");
 
-// EXPLOSION
+// Explosion
 $('.explode').each(function() {
     var text = $(this).text();
     $(this).html(text.replace(/./g, "<span>$&</span>"));
@@ -32,7 +32,7 @@ var min     = -200, max = 200,
     });
 });
 
-//hamburger
+// Hamburger
 var $hamburger = $(".hamburger");
 var $menu      = $(".menu");
 $hamburger.on("click", function(e) {
