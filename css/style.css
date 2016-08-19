@@ -589,3 +589,7 @@ color: rgb(88, 88, 88);
     display: none;
   }
 }
+
+.overflow {
+  overflow: hidden;
+}

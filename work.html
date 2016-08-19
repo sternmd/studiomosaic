@@ -117,7 +117,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="https://npmcdn.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
 <script src="js/masonry.pkgd.min.js"></script>
-<script type="text/javascript" src="js/app.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript" src="js/hamburgers.min.js"></script>
 
 <script type="text/javascript">
@@ -125,11 +125,13 @@
 // MASONRY GRID
 $(document).ready(function() {
   var $container = $('.grid');
+
   $container.imagesLoaded( function() {
-    $('.grid').masonry({
-      // set itemSelector so .grid-sizer is not used in layout
+    $('.grid-item').hide();
+    $('.grid-item').fadeIn();
+
+    $container.masonry({
       itemSelector: '.grid-item',
-      // use element for option
       columnWidth: '.grid-sizer',
       percentPosition: true
     });
