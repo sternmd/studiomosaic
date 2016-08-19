@@ -189,6 +189,8 @@ h6 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; }
 p {
   margin-top: 0;
   text-align: justify;
+  word-spacing:-3px;
+  text-justify: distribute;
   font-size: calc(.6vw + .6vh + .7vmin);
   opacity: 0;
   -webkit-transition: opacity 2s ease-in;
