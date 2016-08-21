@@ -38,8 +38,10 @@ $('.explode span').each(function() {
 var $hamburger = $(".hamburger");
 var $menu = $(".menu");
 var $body = $("body");
+var $html = $("html");
 $hamburger.on("click", function(e) {
   $hamburger.toggleClass("is-active");
   $menu.toggleClass("fade");
   $body.toggleClass("menu-active");
+  $html.toggleClass("menu-active");
 });

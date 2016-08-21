@@ -7,6 +7,7 @@
   background-color: #000;
   z-index: 99;
   opacity: 0;
+  overflow: hidden;
   visibility: hidden;
   display: table;
   transition: opacity .25s ease-in-out;
@@ -38,7 +39,9 @@
   -webkit-transition: opacity .25s ease-in-out;
 }
 .menu-active {
-  overflow: hidden;
+  overflow: hidden !important;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 /* Display menu on index in mobile view*/
@@ -50,6 +53,7 @@
   .menu {
     opacity: 1;
     visibility: visible;
+    overflow: hidden;
   }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 780px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {

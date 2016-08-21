@@ -592,4 +592,6 @@ color: rgb(88, 88, 88);
 
 .overflow {
   overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
