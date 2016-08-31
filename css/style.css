@@ -214,8 +214,6 @@
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
 
-
-
   .mobile-work{
     margin: auto;
     position: absolute;
@@ -488,7 +486,6 @@ color: rgb(88, 88, 88);
 }
 
 
-
 /* Wavy Text
 ======================================================= */
 
@@ -550,45 +547,33 @@ color: rgb(88, 88, 88);
   0%, 100% { top: 0em; } 50% { top: 0.25em; }
 }
 
+
 /* Homepage Background
 ======================================================= */
-#wrap{
-	position:fixed;
-	z-index:-1;
-	top:0;
-	left:0;
-	background-color:black;
+.gradient {
+  background: linear-gradient(231deg, #000000, #C6BABC, #7FBD89, #DBC651, #D4674E, #975A74, #000000, #000000, #000000);
+  background-size: 1600% 1600%;
+
+  -webkit-animation: AnimationName 60s ease infinite;
+  -moz-animation: AnimationName 60s ease infinite;
+  animation: AnimationName 60s ease infinite;
 }
 
-#wrap img.bgfade{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index:-1;
-  display:none;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  /* Preserve aspect ratio */
-  min-width: 100%;
-  min-height: 100%;
-}
-
-@media (max-width: 550px) and (min-width: 0px) {
-  #wrap img.bgfade{
-  display: hidden;
-  position: absolute;
-  top:20%;
-  bottom: 0;
-  margin: auto;
-  min-height: 70%;
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 51%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 51%}
   }
-  #wrap {
-    display: none;
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 51%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 51%}
   }
-}
+  @keyframes AnimationName {
+      0%{background-position:0% 51%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 51%}
+  }
 
 .overflow {
   overflow: hidden;
