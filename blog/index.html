@@ -107,16 +107,11 @@
 <script type="text/javascript">
 
 // MASONRY GRID
-$(document).ready(function() {
-  var $container = $('.gridblog');
-  $container.imagesLoaded( function() {
-    $('.gridblog').masonry({
-      // set itemSelector so .gridblog-sizer is not used in layout
-      itemSelector: '.gridblog-item',
-      // use element for option
-      columnWidth: '.gridblog-sizer',
-      percentPosition: true
-    });
+var $grid = $('.gridblog').imagesLoaded( function() {
+  $grid.masonry({
+    itemSelector: '.gridblog-item',
+    percentPosition: true,
+    columnWidth: '.gridblog-sizer'
   });
 });
 
