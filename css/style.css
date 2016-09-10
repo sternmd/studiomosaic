@@ -332,9 +332,7 @@
 
 
 .tracklist {
-  font-family: 'atc_harrisregular';
-  font-size: .8rem;
-  text-align: justify;
+  font-size: smaller;
 }
 
 .clicked {
