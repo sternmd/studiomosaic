@@ -5,6 +5,8 @@ $("h2").addClass("load");
 $("h3").addClass("load");
 $("span .char").addClass("load");
 $("hr").addClass("load");
+$("img").addClass("load");
+$(".btn").addClass("load");
 
 // Explosion
 $('.explode').each(function() {
