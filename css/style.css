@@ -360,13 +360,13 @@ color: rgb(88, 88, 88);
 
 .studio {
   font-family: 'rasmusregular';
-  font-size: 78px;
+  font-size: 6em;
   z-index:3;
   width: 600px;
   height: 100px;
   position: fixed;
   top: 50%;
-  left: 56%;
+  left: 52%;
   margin-top: -50px;
   margin-left: -300px;
 }​
