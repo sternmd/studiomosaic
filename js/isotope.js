@@ -1,55 +1,3 @@
-// Fade In
-$("p").addClass("load");
-$("h1").addClass("load");
-$("h2").addClass("load");
-$("h3").addClass("load");
-$("span .char").addClass("load");
-$("hr").addClass("load");
-$("img").addClass("load");
-$(".btn").addClass("load");
-
-// Explosion
-$('.explode').each(function() {
-  var text = $(this).text();
-  $(this).html(text.replace(/./g, "<span>$&</span>"));
-});
-
-$('.explode span').each(function() {
-  var min = -200,
-    max = 200,
-    min2 = -300,
-    max2 = 300,
-    random = Math.floor(Math.random() * (max - min + 1)) + min,
-    random2 = Math.floor(Math.random() * (max2 - min2 + 1)) + min2,
-    css = "top:" + random + "px; left:" + random2 + "px",
-    el = $(this);
-
-  el.on({
-    mouseenter: function() {
-      el.attr("style", css);
-    },
-    mouseleave: function() {
-      setTimeout(function() {
-        el.removeAttr("style");
-      }, 300);
-    }
-  });
-});
-
-// Hamburger
-var $hamburger = $(".hamburger"),
-    $menu = $(".menu"),
-    $body = $("body"),
-    $html = $("html");
-
-$hamburger.on("click", function(e) {
-  $hamburger.toggleClass("is-active");
-  $menu.toggleClass("fade");
-  $body.toggleClass("menu-active");
-  $html.toggleClass("menu-active");
-});
-
-
 $('.category').click(function(){
   $(this).toggleClass('clicked');
   $(".category").not(this).removeClass("clicked");
@@ -67,7 +15,7 @@ var $grid = $('.grid').isotope({
 });
 
 $grid.imagesLoaded().progress( function() {
-  $grid.isotope('layout');
+  $grid.fadeIn(1000).isotope('layout');
 });
 
 $(".musics").click(function() {
@@ -90,10 +38,10 @@ $(".all").click(function() {
   $grid.isotope({ filter: '*' });
 });
 
-
 //Isotope gridblog
 var $gridblog = $('.gridblog').isotope({
   itemSelector: '.gridblog-item',
+  sortBy: 'random',
   percentPosition: true,
   masonry: {
     // use outer width of grid-sizer for columnWidth
@@ -102,7 +50,7 @@ var $gridblog = $('.gridblog').isotope({
 });
 
 $gridblog.imagesLoaded().progress( function() {
-  $gridblog.isotope('layout');
+  $gridblog.fadeIn(1000).isotope('layout');
 });
 
 $(".things").click(function() {

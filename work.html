@@ -127,102 +127,17 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
 <script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
-<script src="js/masonry.pkgd.min.js"></script>
 <script type="text/javascript" src="js/app.min.js"></script>
+<script type="text/javascript" src="js/isotope.min.js"></script>
 <script type="text/javascript" src="js/hamburgers.min.js"></script>
 
 <script type="text/javascript">
-
-// MASONRY GRID
-$(document).ready(function() {
-  var $container = $('.grid');
-
-  $container.imagesLoaded( function() {
-    $('.grid-item').hide();
-    $('.grid-item').fadeIn();
-
-    $container.masonry({
-      itemSelector: '.grid-item',
-      columnWidth: '.grid-sizer',
-      percentPosition: true
-    });
-  });
+$(".grid img").load(function(e) {
+    $(this).fadeIn();
 });
-
-// ONCLICK MUSIC FILTER
-$(".musics").click(function() {
-  var music  = $(".music");
-  var events = $(".event");
-  var prints = $(".print");
-  music.show();
-  events.hide();
-  prints.hide();
-  $('.grid').masonry({
-    // set itemSelector so .grid-sizer is not used in layout
-    itemSelector: '.grid-item',
-    // use element for option
-    columnWidth: '.grid-sizer',
-    percentPosition: true
-  });
-});
-
-// ONCLICK EVENT FILTER
-$(".events").click(function() {
-  var music  = $(".music");
-  var events = $(".event");
-  var prints = $(".print");
-  music.hide();
-  events.show();
-  prints.hide();
-  $('.grid').masonry({
-    // set itemSelector so .grid-sizer is not used in layout
-    itemSelector: '.grid-item',
-    // use element for option
-    columnWidth: '.grid-sizer',
-    percentPosition: true
-  });
-});
-
-// ONCLICK PRINTS FILTER
-$(".prints").click(function() {
-  var music  = $(".music");
-  var events = $(".event");
-  var prints = $(".print");
-  prints.show();
-  music.hide();
-  events.hide();
-  $('.grid').masonry({
-    // set itemSelector so .grid-sizer is not used in layout
-    itemSelector: '.grid-item',
-    // use element for option
-    columnWidth: '.grid-sizer',
-    percentPosition: true
-  });
-});
-
-// ONCLICK ALL FILTER
-$(".all").click(function() {
-  var music  = $(".music");
-  var events = $(".event");
-  var prints = $(".print");
-  prints.show();
-  music.show();
-  events.show();
-  $('.grid').masonry({
-    // set itemSelector so .grid-sizer is not used in layout
-    itemSelector: '.grid-item',
-    // use element for option
-    columnWidth: '.grid-sizer',
-    percentPosition: true
-  });
-});
-
-$('.category').click(function(){
-  $(this).toggleClass('clicked');
-  $(".category").not(this).removeClass("clicked");
-});
-
 </script>
+
 </body>
 </html>

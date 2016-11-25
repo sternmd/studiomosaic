@@ -146,8 +146,8 @@ font-size: 62.5%;
 
 body {
   margin:0;
-  font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
-  line-height: 1.5;
+  font-size: 1.75em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.75;
   font-weight: 400;
   font-family: "atc_harrisregular", serif;
   color: rgb(255, 255, 255);
