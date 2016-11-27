@@ -41,7 +41,7 @@ $(".all").click(function() {
 //Isotope gridblog
 var $gridblog = $('.gridblog').isotope({
   itemSelector: '.gridblog-item',
-  sortBy: 'random',
+  sortBy: 'original-order',
   percentPosition: true,
   masonry: {
     // use outer width of grid-sizer for columnWidth
