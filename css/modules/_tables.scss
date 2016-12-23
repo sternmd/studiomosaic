@@ -1,0 +1,37 @@
+// Tables
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #111;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 0;
+}
+
+th:last-child,
+td:last-child {
+  padding-right: 0;
+}
+
+/* This is added */
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr {
+		display: block;
+    text-align: center;
+	}
+  td {
+    padding: 12px 0px;
+    width: 100%;
+  }
+  .mobile-center {
+    text-align: center;
+  }
+}

@@ -1,0 +1,24 @@
+@import "../base/mixins";
+@import "../base/variables";
+
+.clicked {
+color: $dark-grey;
+}
+
+.books, .musics, .events, .prints {
+  text-decoration: none;
+}
+
+@media (max-width: 550px) and (min-width: 0px) {
+  .work {
+      width: 0;
+      padding-right: 7%;
+      padding-left: 14%;
+  }
+}
+
+@media (max-width: 550px) and (min-width: 0px) {
+  .work h2 {
+      font-size: 5vw;
+    }
+}

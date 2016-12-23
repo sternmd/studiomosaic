@@ -1,0 +1,58 @@
+// Base Styles
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+// NOTE
+// html is set to 62.5% so that all the REM measurements throughout Skeleton
+// are based on 10px sizing. So basically 1.5rem = 15px :)
+
+html, body {
+width: 100%;
+height: 100%;
+margin: 0;
+padding: 0;
+font-size: 62.5%;
+-webkit-font-smoothing: antialiased; /*this was added*/
+}
+
+body {
+  font-size: 1.6em; 
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: $font-family;
+  color: $font-color;
+  margin: 0; /*this was added*/
+  background-color: $bg-black /*this was added*/
+}
+
+section {
+  min-height: 100%; /*this was added*/
+}
+
+// Images
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+img {
+  opacity: 0;
+  @include transition(opacity 2s ease-in);
+  &.load {
+    opacity: 1;
+  }
+}
+
+// Links
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+a {
+  color: $link-color;
+  &:hover {
+    color: $dark-grey;
+  }
+}
+
+// Misc
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+hr {
+  margin-top: 3rem;
+  margin-bottom: 3.5rem;
+  border-width: 0;
+  border-top: 1px solid $light-grey;
+}

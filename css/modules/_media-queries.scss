@@ -1,0 +1,42 @@
+// Media Queries
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Note: The best way to structure the use of media queries is to create the queries
+// near the relevant code. For example, if you wanted to change the styles for buttons
+// on small devices, paste the mobile query code up in the buttons section and style it
+// there.
+
+/// Devices up to 320px wide
+@mixin media-mobile-small {
+	@media only screen and (max-width: $breakpoint-xsmall) {
+		@content;
+	}
+}
+
+/// Devices up to 550px wide
+@mixin media-mobile {
+	@media only screen and (max-width: $bp-small) {
+		@content;
+	}
+}
+
+// Devices up to 768px wide
+@mixin media-below-desktop {
+	@media only screen and (max-width: ($bp-medium)) {
+		@content;
+	}
+}
+
+// Devices 1024px wide and above
+@mixin media-desktop {
+	@media only screen and (min-width: $bp-large) {
+		@content;
+	}
+}
+
+// Devices 1350px wide and above
+@mixin media-huge {
+	@media only screen and (min-width: $bp-xlarge) {
+		@content;
+	}
+}

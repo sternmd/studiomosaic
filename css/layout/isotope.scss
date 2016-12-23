@@ -1,0 +1,142 @@
+@import "../base/mixins";
+@import "../base/variables";
+
+
+// Tile Styles
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-decoration: none;
+  color: #fff;
+  display: none;
+  .title {
+    text-align: center;
+    margin-top: 10%;
+    font-size: 2em;
+    color: white;
+  }
+  .description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    margin: 0;
+    p {
+      margin: 20px;
+      color: white;
+    }
+  }
+  
+  //Changing description and font sizes for tiles
+  @media only screen and (min-width: 551px) and (max-width: 1200px) {
+    .description {
+      font-size: smaller;
+    }
+    .title {
+      font-size: 1.5em;
+    }
+  }
+}
+
+.grid-item:hover .overlay, .gridblog-item:hover .overlay {
+  display: block;
+}
+
+.home-block--1:hover .overlay,
+.home-block--2:hover .overlay,
+.home-block--3:hover .overlay,
+.home-block--4:hover .overlay,
+.home-block--5:hover .overlay,
+.home-block--6:hover .overlay,
+.home-block--7:hover .overlay,
+.home-block--8:hover .overlay,
+.home-block--9:hover .overlay {
+  display:block;
+}
+
+//Masonry work grid
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.grid {
+  /*max-width: 1200px;*/
+  margin-left: 4%;
+  margin-right: 5%;
+}
+
+.grid-sizer, .grid-item {
+  width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.grid-item--width2 {
+  width: 40%;
+}
+
+@media screen and (max-width: 1200px) {
+  .grid-sizer, .grid-item {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .grid-sizer, .grid-item {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .grid-sizer, .grid-item {
+    width: 100%;
+  }
+}
+
+//Masonry blog grid
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.gridblog {
+  /*max-width: 1200px;*/
+  margin-left: 4%;
+  margin-right: 5%;
+}
+
+.gridblog-sizer, .gridblog-item {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.gridblog-item--width2 {
+  width: 40%;
+}
+
+@media screen and (max-width: 1200px) {
+  .gridblog-sizer, .gridblog-item {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .gridblog-sizer, .gridblog-item {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gridblog-sizer, .gridblog-item {
+    width: 100%;
+  }
+}

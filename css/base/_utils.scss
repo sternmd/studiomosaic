@@ -1,0 +1,115 @@
+// Utilities
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+//Float
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+.u-full-width {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.u-max-full-width {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.u-pull-right { float: right; }
+.u-pull-left { float: left;}
+.center { text-align: center; }
+
+// Align
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+.u-alignBaseline { vertical-align: baseline !important; }
+.u-alignBottom { vertical-align: bottom !important; }
+.u-alignMiddle { vertical-align: middle !important; }
+.u-alignTop { vertical-align: top !important; }
+
+.u-alignCenter {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+//Display
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+.u-hidden { display: none !important; }
+.smaller { font-size: smaller; }
+
+.excerpt {
+  font-size: smaller;
+  padding: 0 2em;
+  font-style: italic;
+}
+
+/**
+* Completely remove from the flow but leave available to screen readers.
+*/
+.u-hiddenVisually {
+    position: absolute !important;
+    overflow: hidden !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
+.u-block { display: block !important; }
+.u-inline { display: inline !important; }
+
+.u-list-unstyled { list-style-type: none !important; }
+.u-text-unstyled { text-decoration: none !important; }
+
+// Position
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+.u-posAbsolute { position: absolute !important; }
+.u-posRelative { position: relative !important; }
+.u-posStatic { position: static !important; }
+
+.u-posFixed {
+    position: fixed !important;
+    backface-visibility: hidden; /* 1 */
+}
+
+/**
+ * Pins to all corners by default. But when a width and/or height are
+ * provided, the element will be centered in its nearest relatively-positioned
+ * ancestor.
+ */
+
+.u-posAbsoluteCenter {
+    bottom: 0 !important;
+    left: 0 !important;
+    margin: auto !important;
+    position: absolute !important;
+    right: 0 !important;
+    top: 0 !important;
+}
+
+/**
+ * 1. Make sure fixed elements are promoted into a new layer, for performance
+ *    reasons.
+ */
+
+.zindex-1 { z-index: 1; }
+.zindex-2 { z-index: 2; }
+.zindex-3 { z-index: 3; }
+
+// Spacing
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+// zero paddings
+.u-paddingAz { padding: 0 !important; }
+.u-paddingTz { padding-top: 0 !important; }
+.u-paddingBz { padding-bottom: 0 !important; }
+.u-paddingRz { padding-right: 0 !important; }
+.u-paddingLz { padding-left: 0 !important; }
+.u-paddingHz { padding-left: 0 !important; padding-right: 0 !important; }
+.u-paddingVz { padding-top: 0 !important; padding-bottom: 0 !important; }
+
+// zero margins
+.u-marginAz { margin: 0 !important; }
+.u-marginTz { margin-top: 0 !important; }
+.u-marginBz { margin-bottom: 0 !important; }
+.u-marginRz { margin-right: 0 !important; }
+.u-marginLz { margin-left: 0 !important; }
+.u-marginHz { margin-left: 0 !important; margin-right: 0 !important; }
+.u-marginVz { margin-top: 0 !important; margin-bottom: 0 !important; }

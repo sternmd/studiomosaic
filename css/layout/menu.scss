@@ -1,68 +1,71 @@
+@import "../base/mixins";
+@import "../base/variables";
+
+
 .menu {
   text-align: center;
   text-transform: uppercase;
   position: fixed;
+  font-size: 6.5rem;
   width: 100%;
   height: 100%;
-  background-color: #000;
+  background-color: #111;
   z-index: 99;
   opacity: 0;
   overflow: hidden;
   visibility: hidden;
   display: table;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
+  @include transition(.25s ease-in-out);
+  .list {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  @include media-landscape {
+    font-size: 4.5rem;
+  }
 }
-.menu .list {
-  display: table-cell;
-  vertical-align: middle;
-}
+
 .list {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-.menu {
-  font-size: 6.5rem;
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 780px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .menu {
-    font-size: 5rem;
-  }
-}
+
 .fade {
   opacity: 1;
   visibility: visible;
-  transition: opacity .25s ease-in-out;
-  -moz-transition: opacity .25s ease-in-out;
-  -webkit-transition: opacity .25s ease-in-out;
+  @include transition(.25s ease-in-out);
 }
+
 .menu-active {
   overflow: hidden !important;
   overflow-x: hidden;
   overflow-y: hidden;
 }
 
-/* Display menu on index in mobile view*/
+/* On index only, Display menu on index in mobile view*/
 
-@media (max-width: 550px) and (min-width: 0px) {
-  .hamburger {
+@media (max-width: 600px) and (min-width: 0px) {
+  .hamburger.index {
     display: none;
   }
-  .menu {
+  .menu.index {
     opacity: 1;
     visibility: visible;
     overflow: hidden;
   }
+
+  #features {
+    display: none;
+  }
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 780px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .menu {
+  .menu.index {
     font-size: 4.5rem;
     opacity: 1;
     visibility: visible;
   }
-  .hamburger {
+  .hamburger.index {
     display: none;
   }
 }

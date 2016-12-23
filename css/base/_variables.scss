@@ -1,0 +1,62 @@
+// Variables
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Breakpoints
+$bp-xsmall : 320px !default;
+$bp-small  : 550px !default;
+$bp-medium : 750px !default;
+$bp-large  : 1024px !default;
+$bp-xlarge : 1200px !default;
+
+// Colors
+$light-grey: #e1e1e1 !default;
+$dark-grey: #585858 !default;
+$primary-color: #33c3f0 !default;
+$secondary-color: lighten($dark-grey, 13.5%) !default;
+$border-color: #bbb !default;
+$link-color: #FFF !default;
+$font-color: #FFF !default;
+
+$bg-black: #111;
+$white: #FFF;
+
+// Typography
+$font-family: "atc_harrisregular", serif;
+$font-rasmus: "rasmusregular", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+//Grid Variables
+$container-width: 1200px !default;
+$container-width-larger-than-mobile: 85% !default;
+$container-width-larger-than-phablet: 80% !default;
+$total-columns: 12 !default;
+$column-width: 100 / $total-columns !default; // calculates individual column width based off of # of columns
+$column-margin: 4% !default; // space between columns
+
+// Misc
+$global-radius: 4px !default;
+
+//Fonts
+@font-face {
+    font-family: 'atc_harrisregular';
+    src: url(../fonts/atcharris-regular-webfont.eot);
+    src: url(../fonts/atcharris-regular-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/atcharris-regular-webfont.woff2) format('woff2'),
+         url(../fonts/atcharris-regular-webfont.woff) format('woff'),
+         url(../fonts/atcharris-regular-webfont.ttf) format('truetype'),
+         url(../fonts/atcharris-regular-webfont.svg#atc_harrisregular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'rasmusregular';
+    src: url(../fonts/rasmus-regular-webfont.eot);
+    src: url(../fonts/rasmus-regular-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/rasmus-regular-webfont.woff2) format('woff2'),
+         url(../fonts/rasmus-regular-webfont.woff) format('woff'),
+         url(../fonts/rasmus-regular-webfont.ttf) format('truetype'),
+         url(../fonts/rasmus-regular-webfont.svg#rasmusregular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

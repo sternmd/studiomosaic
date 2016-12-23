@@ -1,0 +1,24 @@
+@import "../base/mixins";
+@import "../base/variables";
+
+
+// Switching out album art on mobile
+.resize-left {
+ display: none;
+}
+
+.tracklist {
+  font-size: smaller;
+}
+
+@media (max-width: 550px) and (min-width: 0px) {
+  .resize-left {
+    display: block;
+  }
+  .resize-right {
+    display: none;
+  }
+  .artist-name {
+    text-align: center;
+  }
+}

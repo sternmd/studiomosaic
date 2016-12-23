@@ -1,0 +1,64 @@
+// Mixins
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Media Queries
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+
+/// Devices up to 320px wide
+@mixin media-mobile-small {
+	@media only screen and (max-width: $bp-xsmall) {
+		@content;
+	}
+}
+
+/// Devices up to 550px wide
+@mixin media-mobile {
+	@media only screen and (max-width: $bp-small) {
+		@content;
+	}
+}
+
+// Devices up to 768px wide
+@mixin media-below-desktop {
+	@media only screen and (min-width: ($bp-medium)) {
+		@content;
+	}
+}
+
+// Devices between 550px and 768px wide
+@mixin media-tablet {
+	@media (max-width: 768px) and (min-width: 551px) {
+		@content;
+	}
+}
+
+// Devices 1024px wide and above
+@mixin media-desktop {
+	@media only screen and (min-width: $bp-large) {
+		@content;
+	}
+}
+
+// Devices 1350px wide and above
+@mixin media-huge {
+	@media only screen and (min-width: $bp-xlarge) {
+		@content;
+	}
+}
+
+// Mobile Landscape
+@mixin media-landscape {
+	@media only screen and (min-device-width : $bp-xsmall) and (max-device-width : $bp-medium) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+		@content;
+	}
+}
+
+// Various
+//––––––––––––––––––––––––––––––––––––––––––––––––––
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}

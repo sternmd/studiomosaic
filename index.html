@@ -6,11 +6,8 @@
   <title>Studio Mosaic &mdash; Chicago</title>
   <meta name="description" content="Chicago collective of emerging artists crafting a space to freely collaborate, influence, &amp; engage. We publish &amp; promote limited edition art, music, design."/>
   <link rel="icon" href="images/favicon.ico">
-  <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/skeleton.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/hamburgers.min.css">
-  <link rel="stylesheet" href="css/menu.index.min.css">
+  <link rel="stylesheet" href="build/core.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
   <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -20,29 +17,34 @@
 
   ga('create', 'UA-33721545-1', 'auto');
   ga('send', 'pageview');
+  </script>
 
-</script>
 </head>
 
 <body class="gradient overflow">
 
-  <div><a href="/"><img class="logo mobile-logo" src="images/studiomosaiclogo.svg"></a></div>
+  <a href="/"><img class="logo mobile-logo" src="images/studiomosaiclogo.svg"></a>
+  <a class="icon-matrix" href="work"><img src="images/matrix.svg"></a>
 
-  <nav class="menu">
-        <ul class="list">
-          <li><a href="work">Work</a></li>
-          <li><a href="about">About</a></li>
-          <li><a href="contact">Contact</a></li>
-          <li><a href="blog/">Blog</a></li>
-        </ul>
+  <nav class="menu index">
+    <ul class="list">
+      <li><a href="work">Work</a></li>
+      <li><a href="about">About</a></li>
+      <li><a href="contact">Contact</a></li>
+      <li><a href="blog/">Blog</a></li>
+    </ul>
   </nav>
 
+  <section id="hero">
   <div class="container">
-    <button class="hamburger hamburger--squeeze" type="button">
+    <button class="hamburger index hamburger--squeeze" type="button">
       <span class="hamburger-box">
         <span class="hamburger-inner"></span>
       </span>
     </button>
+
+    <span class="icon-arrow-down"><a href="#features" class="u-text-unstyled">&#8595;</a></span>
+    <span class="icon-arrow-up"><a href="#hero" class="u-text-unstyled">&#8593;</a></span>
 
     <div class="row">
       <div class="studio">
@@ -52,7 +54,7 @@
         <span class="char D explode">d</span>
         <span class="char I explode">i</span>
         <span class="char O explode">o</span>
-        <span class="space">-</span>
+        <span class="space" style="letter-spacing: -0.3em;visibility:hidden;">-</span>
         <span class="char M explode">M</span>
         <span class="char O explode">o</span>
         <span class="char S explode">s</span>
@@ -60,13 +62,92 @@
         <span class="char I explode">i</span>
         <span class="char C explode">c</span>
       </div>
-
     </div>
   </div>
+  </section>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script type="text/javascript" src="js/app.min.js"></script>
-<script type="text/javascript" src="js/hamburgers.min.js"></script>
+  <section id="features">
+    <div class="container">
+      <div class="row">
+        <div class="twelve columns">
+          <ul class="u-list-unstyled u-paddingAz">
+
+            <li class="home-block--1 u-posAbsolute wow fadeInUp" style="width: 40%; margin-top: 0;">
+              <a class ="overlay" href="chicago-above-the-clouds">
+                <h3 class="title"><em><strong>Chicago / Above The Clouds</strong></em> <br> <span class="center">Euphorm</span></h3>
+                <div class="description"><p>Chicago / Above The Clouds steers away from Euphorm's previous style of experimental ambient and dives deeper into Midwest house and techno.</p></div>
+              </a><img src="images/album_chicago-above-the-clouds-index-min.png" width="100%" alt="Chicago Above The Clouds" />
+            </li>
+
+            <li class="home-block--2 u-posAbsolute wow fadeInUp" style="position: absolute; width: 40%; left: 56.25%; margin-top: 40%;">
+              <a class ="overlay" href="downtime-classic">
+                <h3 class="title"><em><strong>Downtime Classic</strong></em> <br> <span class="center">Studio Mosaic</span></h3>
+                <div class="description"><p>A two-part compilation of downtempo and trip-hop essentials.</p></div>
+              </a><img src="images/album_downtime.jpg" width="100%" alt="Downtime Classic" />
+            </li>
+
+            <li class="home-block--3 u-posAbsolute wow fadeInUp" style="width: 40%; left: 0; margin-top: 70%;">
+              <a class ="overlay" href="japanoise">
+                <h3 class="title"><em><strong>Japanoise</strong></em> <br> <span class="center">Studio Mosaic</span></h3>
+                <div class="description"><p>Post post-war rock from the Land of the Rising Sun.</p></div>
+              </a><img src="images/album_japanoise.jpg" width="100%" alt="Japanoise" />
+            </li>
+
+            <li class="home-block--4 u-posAbsolute wow fadeInUp" style="width: 50%; left: 65%; margin-top: 90%;">
+              <a class ="overlay" href="blog/graphic-novels">
+                <h3 class="title"><em><strong>Exploring Alternative Graphic Novels</strong></em></h3>
+                <div class="description"><p>Whether you're a seasoned comic geek or just diving in, our selection of essential graphic novels is an excellent starting point for exploring the genre.</p></div>
+              </a><img src="images/graphic-novels-min.jpg" width="100%" alt="Exploring Alternative Graphic Novels" />
+            </li>
+
+            <li class="home-block--5 u-posAbsolute wow fadeInUp" style="width: 60%; right: 55%; margin-top: 135%;">
+              <a class="overlay" href="typography-as-meta-communication">
+                <h3 class="title"><em><strong>Typography As Meta-Communication</strong></em></h3>
+                <div class="description"><p>A submission for the Society of Typographic Arts.</p></div>
+              </a><img src="images/typography_as_meta-communication-min.png" width="100%" alt="Typography As Meta-Communication" />
+            </li>
+
+            <li class="home-block--6 u-posAbsolute wow fadeInUp" style="position: absolute; width: 40%; left: 0; margin-top: 245%;">
+              <a class="overlay" href="omnium-peak">
+                <h3 class="title"><em><strong>Omnium Peak</strong></em> <br> <span class="center">Euphorm</span></h3>
+                <div class="description"><p>A polyrhythmic collection of ghosts and dreams.</p></div>
+              </a><img src="images/album_omniumpeak.jpg" width="100%" alt="Omnium Peak" />
+            </li>
+
+            <li class="home-block--7 u-posAbsolute wow fadeInUp" style="width: 40%; right: 0; margin-top: 200%;">
+              <a class="overlay" href="ser-libre">
+                <h3 class="title"><em><strong>Ser Libre</strong></em> <br> <span class="center">Patricio Rizzo-Vast</span></h3>
+                <div class="description"><p>A transient piece through the lens of romantic Zen Buddhism and magic realism.</p></div>
+              </a><img src="images/book_serlibre.jpg" width="100%" alt="Ser Libre" />
+            </li>
+
+            <li class="home-block--8 u-posAbsolute wow fadeInUp" style="width: 40%; left: 55%; margin-top: 285%;">
+              <a class ="overlay" href="aftertaste-ep">
+                <h3 class="title"><em><strong>Aftertaste EP</strong></em> <br> <span class="center">Euphorm</span></h3>
+                <div class="description"><p>A pulsing, lo-fi techno apocolypse.</p></div>
+              </a><img src="images/album_aftertaste.jpg" width="100%" alt="Aftertaste EP" />
+            </li>
+
+            <li class="home-block--9 u-posAbsolute wow fadeInUp" style="width: 40%; left: 3%; margin-top: 320%;">
+              <a class="overlay" href="subtle-euphoria">
+                <h3 class="title"><em><strong>Subtle Euphoria</strong></em> <br> <span class="center">Euphorm</span></h3>
+                <div class="description"><p>Flowing in a state of constant departure while always arriving. </p></div>
+              </a><img src="images/album_subtleeuphoria.jpg" width="100%" alt="Subtle Euphoria" />
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="build/app.min.js"></script>
+  <script type="text/javascript" src="build/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
 
 </body>
 </html>

@@ -1,0 +1,201 @@
+@import "../base/mixins";
+@import "../base/variables";
+
+.explode span {
+  position: relative;
+  transition: 0.3s .1s;
+  top:0;
+  left:0;
+}
+
+.logo {
+  display: block;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  width: 100px;
+  height: auto;
+  z-index: 100;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-delay: 0s;
+  @include media-mobile {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    width: 50px;
+    height: auto;
+    z-index: 100;
+  }
+}
+
+// @media (max-width: 550px) and (min-width: 0px) {
+//   .mobile-logo {
+//     position: fixed;
+//     top: 15px;
+//     left: 15px;
+//     width: 50px;
+//     z-index: 100;
+//   }
+// }
+
+@media (max-width: 768px) and (min-width: 551px) {
+  .logo {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    width: 60px;
+    height: auto;
+    z-index: 100;
+  }
+}
+
+.studio {
+  font-family: $font-rasmus;
+  font-size: 6em;
+  // z-index:3;
+  width: 600px;
+  height: 100px;
+  position: fixed;
+  top: 50%;
+  left: 52%;
+  margin-top: -80px;
+  margin-left: -300px;
+  @include media-mobile {
+    display: none;
+    z-index:-5;
+  }
+}​
+
+//Wavy Text
+
+.space {
+  position: relative;
+  letter-spacing: -0.3em;
+  color: black;
+  z-index: -99;
+  opacity: 0;
+}
+
+.char {
+  position:relative;
+  letter-spacing: -0.3em;
+
+  &:nth-child(8n) {
+    animation: wavetext 4s 0s infinite;
+    -webkit-animation: wavetext 4s 0s infinite;
+  }
+  &:nth-child(8n+1) {
+    animation: wavetext 4s -0.5s infinite;
+    -webkit-animation: wavetext 4s -0.5s infinite;
+  }
+  &:nth-child(8n+2) {
+    animation: wavetext 4s -1s infinite;
+    -webkit-animation: wavetext 4s -1s infinite;
+  }
+  &:nth-child(8n+3) {
+    animation: wavetext 4s -1.5s infinite;
+    -webkit-animation: wavetext 4s -1.5s infinite;
+  }
+  &:nth-child(8n+4) {
+    animation: wavetext 4s -2s infinite;
+    -webkit-animation: wavetext 4s -2s infinite;
+  }
+  &:nth-child(8n+5) {
+    animation: wavetext 4s -2.5s infinite;
+    -webkit-animation: wavetext 4s -2.5s infinite;
+  }
+  &:nth-child(8n+6) {
+    animation: wavetext 4s -3s infinite;
+    -webkit-animation: wavetext 4s -3s infinite;
+  }
+  &:nth-child(8n+7) {
+    animation: wavetext 4s -3.5s infinite;
+    -webkit-animation: wavetext 4s -3.5s infinite;
+  }
+  @include media-mobile {
+    display: none;
+  }
+}
+
+@keyframes wavetext {
+  0%, 100% { top: 0em; } 50% { top: 0.25em; }
+}
+@-webkit-keyframes wavetext {
+  0%, 100% { top: 0em; } 50% { top: 0.25em; }
+}
+
+// BG Gradient
+.gradient {
+  background: linear-gradient(231deg, #C6BABC, #111, #7FBD89, #DBC651, #111, #D4674E, #111, #975A74, #111, #111, #111);
+  background-size: 1600% 1600%;
+  -webkit-animation: AnimationName 80s ease infinite;
+  -moz-animation: AnimationName 80s ease infinite;
+  animation: AnimationName 80s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+
+/* Landscape */
+@include media-landscape {
+  .mobile-logo {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    width: 65px;
+    z-index: 100;
+  }
+  .studio {
+    display: none;
+    z-index: -5;
+  }
+  .char {
+    display: none;
+  }
+}
+
+// Index Icons
+.icon-matrix {
+    display: none;
+  img {
+    position: fixed;
+    width: 80px;
+    bottom: 25px;
+    left: 15px;
+    padding: 10px;
+  }
+}
+
+.icon-arrow-down {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  color: $white;
+  padding: 15px;
+  margin-right: 8px;
+  font-size: 48px;
+}
+
+.icon-arrow-up {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  color: $white;
+  padding: 15px;
+  margin-right: 8px;
+  font-size: 48px;
+}
