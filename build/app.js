@@ -57,7 +57,7 @@ $(window).scroll(function() {
       arrowUp    = $('.icon-arrow-up'),
       arrowDown  = $('.icon-arrow-down');
 
-  function DisplayAboveFold(elem) {
+  function displayAboveFold(elem) {
     if (scroll  < 400) {
         elem.fadeIn("slow");
       } else {
@@ -65,7 +65,7 @@ $(window).scroll(function() {
       }
   };
 
-  function DisplayAtBottom(elem) {
+  function displayAtBottom(elem) {
     if (scroll + $(window).height() === $(document).height()) {
         elem.fadeIn("slow");
     } else {
@@ -73,10 +73,10 @@ $(window).scroll(function() {
     }
   };
 
-  DisplayAboveFold(studioText);
-  DisplayAboveFold(arrowDown);
-  DisplayAtBottom(arrowUp);
-  DisplayAtBottom(matrix);
+  displayAboveFold(studioText);
+  displayAboveFold(arrowDown);
+  displayAtBottom(arrowUp);
+  displayAtBottom(matrix);
 
 });
 
