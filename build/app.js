@@ -42,6 +42,29 @@ var explodingText = function () {
   });
 };
 
+var insertFilm = function () {
+
+  function findMovie(title) {
+    $.ajax({
+      url:'http://www.omdbapi.com/?t=' + title,
+      dataType: 'json',
+      success: function(data) {
+        var title  = data.Title,
+            year   = data.Year,
+            genre  = data.Genre,
+            awards = data.Awards,
+            plot   = data.Plot;
+      }
+    });
+  }
+
+  $(".film").each(function() {
+      var title = $(this).data();
+      findMovie(title);
+    });
+
+}
+
 // Hamburger
 var hamburgerMenu = function() {
   var $hamburger = $(".hamburger"),
@@ -112,11 +135,13 @@ return {
    explodingText: explodingText,
    hamburgerMenu: hamburgerMenu,
    indexIcons: indexIcons,
-   smoothScroll: smoothScroll
+   smoothScroll: smoothScroll,
+   insertFilm: insertFilm
  };
 
 })();
 
+Module.insertFilm();
 Module.fadeIn();
 Module.explodingText();
 Module.hamburgerMenu();
