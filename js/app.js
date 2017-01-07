@@ -44,24 +44,30 @@ var explodingText = function () {
 
 var insertFilm = function () {
 
-  function findMovie(title) {
+  function getMovie(title, i) {
     $.ajax({
       url:'http://www.omdbapi.com/?t=' + title,
       dataType: 'json',
       success: function(data) {
-        var title  = data.Title,
+        var image  = data.Poster,
             year   = data.Year,
             genre  = data.Genre,
             awards = data.Awards,
             plot   = data.Plot;
+
+        $('.filmTitle').eq(i).append(" (" + year + ")");
+        $('.filmImg').eq(i).attr("src", image);
+        $('.filmPlot').eq(i).text(plot);
+        $('.filmGenre').eq(i).append(genre);
+        $('.filmAwards').eq(i).text(awards);
       }
     });
   }
 
-  $(".film").each(function() {
-      var title = $(this).data();
-      findMovie(title);
-    });
+  $('tr .filmTitle').each(function(i) {
+    var $title = $(this).text();
+    getMovie($title, i);
+  })
 
 }
 
