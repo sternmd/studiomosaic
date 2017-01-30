@@ -213,7 +213,7 @@ html, body {
   /*this was added*/ }
 
 body {
-  font-size: 1.6em;
+  font-size: 1.75em;
   line-height: 1.6;
   font-weight: 400;
   font-family: "atc_harrisregular", serif;
@@ -1152,6 +1152,9 @@ form {
 .resize-left {
   display: none; }
 
+.artist-name {
+  opacity: .5 !important; }
+
 .tracklist {
   font-size: smaller; }
 
@@ -1162,6 +1165,29 @@ form {
     display: none; }
   .artist-name {
     text-align: center; } }
+
+@font-face {
+  font-family: 'atc_harrisregular';
+  src: url(../fonts/atcharris-regular-webfont.eot);
+  src: url(../fonts/atcharris-regular-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/atcharris-regular-webfont.woff2) format("woff2"), url(../fonts/atcharris-regular-webfont.woff) format("woff"), url(../fonts/atcharris-regular-webfont.ttf) format("truetype"), url(../fonts/atcharris-regular-webfont.svg#atc_harrisregular) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'rasmusregular';
+  src: url(../fonts/rasmus-regular-webfont.eot);
+  src: url(../fonts/rasmus-regular-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/rasmus-regular-webfont.woff2) format("woff2"), url(../fonts/rasmus-regular-webfont.woff) format("woff"), url(../fonts/rasmus-regular-webfont.ttf) format("truetype"), url(../fonts/rasmus-regular-webfont.svg#rasmusregular) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.blog-subhead {
+  font-family: "atc_harrisregular", serif !important;
+  opacity: .5 !important;
+  font-size: 1.5em;
+  font-weight: 700; }
+  @media only screen and (max-width: 550px) {
+    .blog-subhead {
+      font-size: 1em; } }
 
 /* Layout */
 @font-face {
