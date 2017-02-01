@@ -10,3 +10,43 @@
     font-size: 1em;
   }
 }
+
+.blog-entry {
+  text-decoration: none;
+  line-height: 3;
+  display: table;
+
+  &__date {
+    display: table-cell;
+    font-weight: 600;
+    opacity: .5;
+    padding-right: 1.5em;
+    font-size: smaller;
+    // opacity: 0; /*this was added*/
+    // transition: opacity 2s ease-in;
+    @include media-mobile {
+      display: block;
+      font-size: 1em;
+    }
+  }
+
+  &__title {
+    display: table-cell;
+    &:hover {
+      text-decoration: none;
+    }
+    @include media-mobile {
+      display: block;
+      text-align:left;
+    }
+  }
+
+  &__image {
+    display: none;
+    position: absolute;
+    width: 50%;
+    right: -12em;
+    z-index: -1;
+    transition: opacity 2s ease-in;
+  }
+}

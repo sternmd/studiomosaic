@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <title>Studio Mosaic | Blog</title>
+  <link rel="icon" href="../images/favicon.ico">
+  <link rel="stylesheet" href="../build/core.min.css">
+
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33721545-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</head>
+
+<body>
+  <div><a href="../"><img class="logo" src="../images/studiomosaiclogo.svg"></a></div>
+
+  <nav class="menu">
+    <ul class="list">
+      <li><a href="../work">Work</a></li>
+      <li><a href="../about">About</a></li>
+      <li><a href="../contact">Contact</a></li>
+      <li><a href="index">Blog</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+
+    <button class="hamburger hamburger--squeeze" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
+      <div class="row">
+
+          <div class="three columns work">
+          <h2 class="peoples center"><a href="#" class="category">People</a></h2></div>
+
+          <div class="three columns work">
+          <h2 class="places center"><a href="#" class="category">Places</a></left></div>
+
+          <div class="three columns work">
+          <h2 class="things center"><a href="#" class="category">Things</a></h2></div>
+
+          <div class="three columns work">
+          <h2 class="all center"><a href="#" class="category clicked">All</a></h2></div>
+
+        </div><!-- close row -->
+
+    <div class="row">
+      <div class="gridblog">
+        <!-- width of .gridblog-sizer used for columnWidth -->
+        <div class="gridblog-sizer"></div>
+
+        <div class="gridblog-item thing"><a class ="overlay" href="2016-films">
+          <h3 class="title"><em>Films We Watched Last Year</em></h3>
+          <div class="description"><p>A selection of noteworthy movies we watched in 2016.</p></div>
+        </a><img src="../images/2016-films-min.jpg" width="100%"alt="Alternative Graphic Novels" />
+        </div>
+
+        <div class="gridblog-item thing"><a class ="overlay" href="graphic-novels">
+          <h3 class="title"><em>Exploring Alternative Graphic Novels</em></h3>
+          <div class="description"><p>Whether you're a seasoned comic geek or just diving in, our selection of essential graphic novels is an excellent starting point for exploring the genre.</p></div>
+        </a><img src="../images/graphic-novels-min.jpg" width="100%"alt="Alternative Graphic Novels" />
+        </div>
+
+        <div class="gridblog-item people"><a class ="overlay" href="jack-kerouac-taoism">
+          <h3 class="title"><em>In Search of the Abstract Truth: On Jack Kerouac and Taoism</em></h3>
+          <div class="description"><p>An essay focused on the works of beat writer Jack Kerouac and his literary associations with Taoist and Buddhist traditions.</p></div>
+        </a><img src="../images/kerouac-min.jpg" width="100%"alt="Jack Kerouac" />
+        </div>
+
+          <div class="gridblog-item place"><a class ="overlay" href="rooted-in-soil">
+            <h3 class="title"><em>Rooted In Soil</em></h3>
+				    <div class="description"><p>A Depaul Art Museum exhibit by artists who explore our connection to this living biosphere.</p></div>
+          </a><img src="../images/rooted-in-soil1.jpg" width="100%"alt="Rooted In Soil" />
+          </div>
+
+          <div class="gridblog-item place"><a class="overlay" href="typeforce-6">
+            <h3 class="title"><em>Typeforce 6</em></h3>
+            <div class="description"><p>Annual showcase of Chicago's emerging typographic allstars.</p></div>
+          </a><img src="../images/typeforce6-2.jpg" width="100%"alt="Typeforce 6" />
+          </div>
+
+          <div class="gridblog-item people"><a class="overlay" href="sofia-leiby">
+            <h3 class="title"><em>Papa's Face</em></h3>
+            <div class="description"><p>An interview with Sofia Leiby.</p></div>
+          </a><img src="../images/papas-face.jpg" width="100%"alt="Papa's Face" />
+          </div>
+
+          <div class="gridblog-item people"><a class="overlay" href="megan-jean-pryce">
+            <h3 class="title"><em>Connecting Values Through Type</em></h3>
+            <div class="description"><p>An interview with Megan Jean Pryce.</p></div>
+          </a><img src="../images/megan-jean-pryce.jpg" width="100%"alt="Megan Jean Pryce" />
+          </div>
+
+          <div class="gridblog-item place"><a class="overlay" href="typeforce-5">
+            <h3 class="title"><em>Typeforce 5</em></h3>
+            <div class="description"><p>Annual showcase of Chicago's emerging typographic allstars.</p></div>
+          </a><img src="../images/typeforce5.jpg" width="100%"alt="Typeforce 5" />
+          </div>
+
+      </div><!-- close gridblog -->
+  </div><!-- close row -->
+</div><!-- close container -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@4.1/imagesloaded.pkgd.min.js"></script>
+<script type="text/javascript" src="../build/app.min.js"></script>
+<script type="text/javascript" src="../build/isotope.min.js"></script>
+
+<script type="text/javascript">
+  $(".gridblog img").on('load', function(e) {
+      $(this).fadeIn();
+  });
+</script>
+
+</body>
+</html>

@@ -286,6 +286,9 @@ hr {
 .smaller {
   font-size: smaller; }
 
+.show {
+  display: block !important; }
+
 .excerpt {
   font-size: smaller;
   padding: 0 2em;
@@ -470,7 +473,7 @@ h6 {
   h2 {
     font-size: 3.5vw; }
   h3 {
-    font-size: 2vw; }
+    font-size: 3vw; }
   h4 {
     font-size: 3.0rem; }
   h5 {
@@ -1188,6 +1191,36 @@ form {
   @media only screen and (max-width: 550px) {
     .blog-subhead {
       font-size: 1em; } }
+
+.blog-entry {
+  text-decoration: none;
+  line-height: 3;
+  display: table; }
+  .blog-entry__date {
+    display: table-cell;
+    font-weight: 600;
+    opacity: .5;
+    padding-right: 1.5em;
+    font-size: smaller; }
+    @media only screen and (max-width: 550px) {
+      .blog-entry__date {
+        display: block;
+        font-size: 1em; } }
+  .blog-entry__title {
+    display: table-cell; }
+    .blog-entry__title:hover {
+      text-decoration: none; }
+    @media only screen and (max-width: 550px) {
+      .blog-entry__title {
+        display: block;
+        text-align: left; } }
+  .blog-entry__image {
+    display: none;
+    position: absolute;
+    width: 50%;
+    right: -12em;
+    z-index: -1;
+    transition: opacity 2s ease-in; }
 
 /* Layout */
 @font-face {

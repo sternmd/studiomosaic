@@ -10,6 +10,7 @@ var fadeIn = function () {
   $("hr").addClass("load");
   $("img").addClass("load");
   $(".btn").addClass("load");
+  // $(".blog-entry__date").addClass("load");
 };
 
 // Explosion
@@ -118,6 +119,19 @@ var indexIcons = function () {
   });
 };
 
+// Blog Index Page
+var blogIndex = function() {
+  var blogImage = $('.blog-entry__image'),
+      blogEntry = $('.blog-entry');
+
+    blogEntry.hover(function(){
+      var $this = $(this);
+      if ($(window).width() > 550) {
+        $this.find(blogImage).toggleClass('show animated fadeInRight');
+      }
+    });
+};
+
 // Smooth Scroll
 var smoothScroll = function () {
   $(function() {
@@ -142,7 +156,8 @@ return {
    hamburgerMenu: hamburgerMenu,
    indexIcons: indexIcons,
    smoothScroll: smoothScroll,
-   insertFilm: insertFilm
+   insertFilm: insertFilm,
+   blogIndex: blogIndex
  };
 
 })();
@@ -153,3 +168,4 @@ Module.explodingText();
 Module.hamburgerMenu();
 Module.indexIcons();
 Module.smoothScroll();
+Module.blogIndex();
