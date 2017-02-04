@@ -38,6 +38,7 @@
   .column.work,
   .columns.work {
     margin-top: 25%; /*this was added*/
+    margin-left: 0 !important; /*this was added*/
   }
 }
 
@@ -58,6 +59,10 @@
   .columns {
     margin-left: $column-margin;
   }
+  .column.work,
+  .columns.work {
+    margin-left: 0 !important; /*this was added*/
+  }
   .column:first-child,
   .columns:first-child {
     margin-left: 0;
@@ -67,6 +72,7 @@
   .one.columns          { width: grid-column-width(1);  }
   .two.columns          { width: grid-column-width(2);  }
   .three.columns        { width: grid-column-width(3);  }
+  .three.columns.work   { width: 25% !important;  } /*this was added*/
   .four.columns         { width: grid-column-width(4);  }
   .five.columns         { width: grid-column-width(5);  }
   .six.columns          { width: grid-column-width(6);  }

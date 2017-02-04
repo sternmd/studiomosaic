@@ -544,6 +544,8 @@ p.load {
   .column.work,
   .columns.work {
     margin-top: 25%;
+    /*this was added*/
+    margin-left: 0 !important;
     /*this was added*/ } }
 
 @media only screen and (min-width: 320px) {
@@ -557,6 +559,10 @@ p.load {
   .column,
   .columns {
     margin-left: 4%; }
+  .column.work,
+  .columns.work {
+    margin-left: 0 !important;
+    /*this was added*/ }
   .column:first-child,
   .columns:first-child {
     margin-left: 0; }
@@ -567,6 +573,9 @@ p.load {
     width: 13.33333%; }
   .three.columns {
     width: 22%; }
+  .three.columns.work {
+    width: 25% !important; }
+  /*this was added*/
   .four.columns {
     width: 30.66667%; }
   .five.columns {
