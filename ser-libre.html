@@ -43,46 +43,67 @@
     <div class="row">
       <div class="one-half column">
         <h1>Ser Libre</h1>
-         <p class="artist-name"><b>Patricio Rizzo-Vast</b></p>
-         <div class="resize-left"><img src="images/ser-libre.jpg" width="100%" /></div>
-         <p>Enter Dreamland. Patrico Rizzo-Vast’s art collection, <em>Ser Libre</em>, weaves sentimental collages and poetry, oftentimes focusing on the microcosmic connections of the world. A transient piece through the lens of romantic Zen Buddhism and magic realism.</p>
+        <p class="artist-name"><b>Patricio Rizzo-Vast</b></p>
+        <div class="resize-left"><p><img src="images/ser-libre.jpg" width="100%" /></p></div>
 
-         <p>Item available for purchase upon <a href="contact">contact</a>.</p>
+        <p>Enter Dreamland. Patrico Rizzo-Vast’s art collection, <em>Ser Libre</em>, weaves sentimental collages and poetry, oftentimes focusing on the microcosmic connections of the world. A transient piece through the lens of romantic Zen Buddhism and magic realism.</p>
+        <p>Item available for purchase upon <a href="contact">contact</a>.</p>
       </div> <!-- close column -->
 
       <div class="one-half column tracklist">
-        <img src="images/ser-libre.jpg" class="resize-right" width="100%" />
-        <p>
-          <br/>
-          Genre: Zine / Poetry / Collage
-        </p>
-          <hr/>
-          <p>
-          Artwork & Poetry: Patricio Rizzo-Vast
-          </p>
-          <hr/>
-          <p>
-          Design: Timothy Dilich / Maxwell Stern
-          </p>
-          <hr/>
-          <p>
-          Specs: 44 pages / 5" x 4"
-          </p>
-          <hr/>
-          <p>
-          Release: March 2013
-          </p>
-          <hr/>
-          <p>
-          Limited Edition: 1st of 100
-        </p>
+        <div class="siema">
+          <div><img src="images/ser-libre.jpg" class="resize-right" width="100%"/></div>
+          <div><img src="images/serlibre/pilgrim-min.jpg" class="resize-right" width="100%"/></div>
+          <div><img src="images/serlibre/cosmic-warrior-min.jpg" class="resize-right" width="100%"/></div>
+          <div><img src="images/serlibre/murio-min.jpg" class="resize-right" width="100%"/></div>
+        </div>
+
+        <div class="btn-wrapper" style="text-align:center">
+          <a href="#" class="prev" style="display:inline-block"><</a>
+          <a href="#" class="next" style="display:inline-block">></a>
+        </div>
+
+        <br/>
+        <p>Genre: Zine / Poetry / Collage</p>
+        <hr/>
+        <p>Artwork & Poetry: Patricio Rizzo-Vast</p>
+        <hr/>
+        <p>Design: Timothy Dilich / Maxwell Stern</p>
+        <hr/>
+        <p>Specs: 44 pages / 5" x 4"</p>
+        <hr/>
+        <p>Release: March 2013</p>
+        <hr/>
+        <p>Limited Edition: 1st of 100</p>
       </div>
     </div>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script type="text/javascript" src="build/app.min.js"></script>
-  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5891028fdb8fe537"></script> 
+  <script type="text/javascript" src="build/lib/siema.min.js"></script>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5891028fdb8fe537"></script>
+  <script>
+    var mySiema = new Siema({
+      selector: '.siema',
+      duration: 200,
+      easing: 'ease-in-out',
+      perPage: 1,
+      startIndex: 0,
+      draggable: true,
+      threshold: 20,
+      loop: true,
+    });
 
+    $('.prev').on('click', function(e) {
+      e.preventDefault();
+      mySiema.prev();
+    });
+
+    $('.next').on('click', function(e) {
+      e.preventDefault();
+      mySiema.next();
+    });
+  </script>
 </body>
 </html>

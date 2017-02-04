@@ -1167,7 +1167,9 @@ form {
   .resize-right {
     display: none; }
   .artist-name {
-    text-align: center; } }
+    text-align: center; }
+  .prev, .next {
+    display: none !important; } }
 
 @font-face {
   font-family: 'atc_harrisregular';
