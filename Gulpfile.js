@@ -11,35 +11,36 @@ var gulp        = require('gulp'),
     minify      = require('gulp-minify-css');
 
 gulp.task('styles', function () {
-  return gulp.src('css/core.scss')
+  return gulp.src('src/css/core.scss')
     .pipe(plumber())
     .pipe(sourcemaps.init())
     .pipe(sass({ style: 'expanded' }))
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('src/css'))
     .pipe(rename({suffix: '.min'}))
     .pipe(minify())
     .pipe(sourcemaps.write('/maps'))
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('src/build'))
     .pipe(browserSync.reload({stream:true}))
     .pipe(notify({ message: 'Styles task complete' }));
 });
 
 gulp.task('scripts', function() {
-  return gulp.src(['js/app.js'])
+  return gulp.src(['src/js/app.js'])
     .pipe(plumber())
     .pipe(sourcemaps.init())
-    .pipe(concat('app.js'))
-    .pipe(gulp.dest('build'))
+    // .pipe(concat('app.js'))
+    // .pipe(gulp.dest('build'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
     .pipe(sourcemaps.write('/maps'))
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('src/build'))
     .pipe(browserSync.reload({stream:true}))
     .pipe(notify({ message: 'Scripts task complete' }));
 });
 
 gulp.task('browser-sync', ['styles', 'scripts'], function() {
     browserSync.init(null, {
+        startPath: "src/",
         server: {
             baseDir: './'
         },
@@ -49,11 +50,11 @@ gulp.task('browser-sync', ['styles', 'scripts'], function() {
 
 gulp.task('watch', function() {
   // Watch .scss files
-  gulp.watch('css/**/*.scss', ['styles']);
+  gulp.watch('src/css/**/*.scss', ['styles']);
   // Watch .js files
-  gulp.watch('js/*.js', ['scripts']);
+  gulp.watch('src/js/*.js', ['scripts']);
   // Watch .html files
-  gulp.watch("*/**.html").on('change', browserSync.reload);
+  gulp.watch("src/**/*.html").on('change', browserSync.reload);
 });
 
 gulp.task('default', function() {
