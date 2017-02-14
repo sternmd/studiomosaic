@@ -68,9 +68,9 @@ var insertFilm = function () {
   $('tr .filmTitle').each(function(i) {
     var $title = $(this).text();
     getMovie($title, i);
-  })
+  });
 
-}
+};
 
 // Hamburger
 var hamburgerMenu = function() {
@@ -102,7 +102,7 @@ var indexIcons = function () {
         } else {
           elem.fadeOut("slow");
         }
-    };
+    }
 
     function DisplayAtBottom(elem) {
       if (scroll + $(window).height() === $(document).height()) {
@@ -110,7 +110,7 @@ var indexIcons = function () {
       } else {
           elem.fadeOut("slow");
       }
-    };
+    }
 
     DisplayAboveFold(studioText);
     DisplayAboveFold(arrowDown);

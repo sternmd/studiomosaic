@@ -2,10 +2,12 @@ var gulp        = require('gulp'),
     sass        = require('gulp-sass'),
     cache       = require('gulp-cache'),
     concat      = require('gulp-concat'),
+    jshint      = require('gulp-jshint'),
     uglify      = require('gulp-uglify'),
     notify      = require('gulp-notify'),
     rename      = require('gulp-rename'),
     plumber     = require('gulp-plumber'),
+    stylish     = require('jshint-stylish'),
     browserSync = require('browser-sync'),
     sourcemaps  = require('gulp-sourcemaps'),
     minify      = require('gulp-minify-css');
@@ -28,6 +30,10 @@ gulp.task('scripts', function() {
   return gulp.src(['src/js/app.js'])
     .pipe(plumber())
     .pipe(sourcemaps.init())
+    .pipe(jshint({
+      jquery: true
+    }))
+    .pipe(jshint.reporter(stylish))
     // .pipe(concat('app.js'))
     // .pipe(gulp.dest('build'))
     .pipe(rename({suffix: '.min'}))
