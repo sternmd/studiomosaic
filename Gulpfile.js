@@ -1,5 +1,6 @@
 var gulp        = require('gulp'),
     sass        = require('gulp-sass'),
+    clean       = require('gulp-clean'),
     cache       = require('gulp-cache'),
     concat      = require('gulp-concat'),
     jshint      = require('gulp-jshint'),
@@ -12,7 +13,18 @@ var gulp        = require('gulp'),
     sourcemaps  = require('gulp-sourcemaps'),
     minify      = require('gulp-minify-css');
 
-gulp.task('styles', function () {
+
+gulp.task('clean-styles', function () {
+  return gulp.src('src/build/*.css', {read: false})
+    .pipe(clean());
+});
+
+gulp.task('clean-scripts', function () {
+  return gulp.src('src/build/*.js', {read: false})
+    .pipe(clean());
+});
+
+gulp.task('styles', ['clean-styles'], function () {
   return gulp.src('src/css/core.scss')
     .pipe(plumber())
     .pipe(sourcemaps.init())
@@ -26,7 +38,7 @@ gulp.task('styles', function () {
     .pipe(notify({ message: 'Styles task complete' }));
 });
 
-gulp.task('scripts', function() {
+gulp.task('scripts', ['clean-scripts'], function() {
   return gulp.src(['src/js/app.js'])
     .pipe(plumber())
     .pipe(sourcemaps.init())
@@ -34,8 +46,6 @@ gulp.task('scripts', function() {
       jquery: true
     }))
     .pipe(jshint.reporter(stylish))
-    // .pipe(concat('app.js'))
-    // .pipe(gulp.dest('build'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
     .pipe(sourcemaps.write('/maps'))
