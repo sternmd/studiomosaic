@@ -2,15 +2,7 @@ var Module = (function () {
 
 // Fade In
 var fadeIn = function () {
-  $("p").addClass("load");
-  $("h1").addClass("load");
-  $("h2").addClass("load");
-  $("h3").addClass("load");
-  $("span .char").addClass("load");
-  $("hr").addClass("load");
-  $("img").addClass("load");
-  $(".btn").addClass("load");
-  // $(".blog-entry__date").addClass("load");
+  $('p, h1, h2, h3, span.char, hr, img, .btn').addClass("load");
 };
 
 // Explosion
