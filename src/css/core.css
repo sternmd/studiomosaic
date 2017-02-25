@@ -1162,7 +1162,7 @@ form {
   font-style: normal; }
 
 .resize-left {
-  display: none; }
+  display: none !important; }
 
 .artist-name {
   opacity: .5 !important; }
@@ -1172,13 +1172,20 @@ form {
 
 @media (max-width: 550px) and (min-width: 0px) {
   .resize-left {
-    display: block; }
+    display: block !important; }
   .resize-right {
-    display: none; }
+    display: none !important; }
   .artist-name {
     text-align: center; }
   .prev, .next {
     display: none !important; } }
+
+.btn-wrapper {
+  text-align: right;
+  font-size: larger;
+  font-weight: bold; }
+  .btn-wrapper a {
+    display: inline-block; }
 
 @font-face {
   font-family: 'atc_harrisregular';
