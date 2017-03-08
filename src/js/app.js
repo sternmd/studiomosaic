@@ -5,6 +5,17 @@ var fadeIn = function () {
   $('p, h1, h2, h3, span.char, hr, img, .btn').addClass("load");
 };
 
+//Studio Logo
+var studioLogo = function() {
+  $('img.logo').mouseenter(function(){
+    $(this).attr('src', './images/studiomosaiclogo-dark.svg');
+  });
+
+  $('img.logo').mouseleave(function(){
+    $(this).attr('src', './images/studiomosaiclogo.svg');
+  });
+};
+
 // Explosion
 var explodingText = function () {
   $('.explode').each(function() {
@@ -149,13 +160,15 @@ return {
    indexIcons: indexIcons,
    smoothScroll: smoothScroll,
    insertFilm: insertFilm,
-   blogIndex: blogIndex
+   blogIndex: blogIndex,
+   studioLogo: studioLogo
  };
 
 })();
 
 Module.insertFilm();
 Module.fadeIn();
+Module.studioLogo();
 Module.explodingText();
 Module.hamburgerMenu();
 Module.indexIcons();
