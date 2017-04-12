@@ -1174,7 +1174,8 @@ form {
 
 @media (max-width: 550px) and (min-width: 0px) {
   .resize-left {
-    display: block !important; }
+    display: block !important;
+    margin-bottom: 1.5em; }
   .resize-right {
     display: none !important; }
   .artist-name {
