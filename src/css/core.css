@@ -492,11 +492,7 @@ p {
   transition: opacity 2s ease-in;
   /*this was added*/ }
 
-h1.load, h2.load, h3.load {
-  opacity: 1;
-  /*this was added*/ }
-
-p.load {
+.load {
   opacity: 1;
   /*this was added*/ }
 

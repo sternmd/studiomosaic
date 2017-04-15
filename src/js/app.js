@@ -2,7 +2,7 @@ var Module = (function () {
 
 // Fade In
 var fadeIn = function () {
-  $('p, h1, h2, h3, span.char, hr, img, .btn').addClass("load");
+  $('p, h1, h2, h3, h4, span.char, hr, img, .btn').addClass("load");
 };
 
 //Studio Logo
