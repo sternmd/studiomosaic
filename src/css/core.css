@@ -963,7 +963,7 @@ form {
   -webkit-animation-duration: 3s;
   -webkit-animation-delay: 0s; }
   .logo:hover {
-    background: url("../images/studiomosaiclogo-grey.svg"); }
+    background: url("../images/studiomosaiclogo-dark.svg"); }
   @media only screen and (max-width: 550px) {
     .logo {
       position: fixed;
