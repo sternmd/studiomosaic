@@ -294,6 +294,12 @@ hr {
   padding: 0 2em;
   font-style: italic; }
 
+.caption {
+  font-size: 12px;
+  text-align: left;
+  margin-top: -2em;
+  padding-bottom: 1em; }
+
 /**
 * Completely remove from the flow but leave available to screen readers.
 */
