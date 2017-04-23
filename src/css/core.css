@@ -1141,15 +1141,20 @@ form {
 .books, .musics, .events, .prints {
   text-decoration: none; }
 
-@media (max-width: 550px) and (min-width: 0px) {
+@media (min-width: 0px) and (max-width: 550px) {
   .work {
     width: 0;
     padding-right: 7%;
-    padding-left: 14%; } }
-
-@media (max-width: 550px) and (min-width: 0px) {
-  .work h2 {
-    font-size: 5vw; } }
+    padding-left: 14%; }
+    .work h2 {
+      font-size: 5vw; }
+  .column-wrapper {
+    position: fixed;
+    z-index: 1;
+    background-color: #111;
+    width: 83%; }
+  .work-container {
+    margin-top: 7em; } }
 
 @font-face {
   font-family: 'atc_harrisregular';
