@@ -50,26 +50,23 @@ var insertFilm = function () {
 
   function getMovie(title, i) {
     $.ajax({
-      url:'http://www.omdbapi.com/?t=' + title,
+      url:'https://api.themoviedb.org/3/search/movie?api_key=d87d5bce9190c8fc27531b278ebf019d&query=' + title,
       dataType: 'json',
       success: function(data) {
-        var image  = data.Poster,
-            year   = data.Year,
-            genre  = data.Genre,
-            awards = data.Awards,
-            plot   = data.Plot;
+        var film = data.results[0],
+            image  = 'https://image.tmdb.org/t/p/w185/' + film.poster_path,
+            year   = film.release_date.substring(0,4),
+            plot   = film.overview;
 
         $('.filmTitle').eq(i).append(" (" + year + ")");
         $('.filmImg').eq(i).attr("src", image);
         $('.filmPlot').eq(i).text(plot);
-        $('.filmGenre').eq(i).append(genre);
-        $('.filmAwards').eq(i).text(awards);
       }
     });
   }
 
   $('tr .filmTitle').each(function(i) {
-    var $title = $(this).text();
+    var $title = $(this).text().split(' ').join('+');
     getMovie($title, i);
   });
 
