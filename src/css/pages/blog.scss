@@ -11,6 +11,12 @@
   }
 }
 
+@include media-landscape {
+  #blog .eight.columns {
+      width: 100%;
+  }
+}
+
 .blog-entry {
   text-decoration: none;
   line-height: 3;
