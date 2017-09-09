@@ -49,8 +49,16 @@ Designed and developed by:
 
   </head>
 
-  <body class="demo-2">
-
+  <body class="gradient overflow">
+    <svg class="svg-filters" style="display: none;">
+			<defs>
+				<filter id="filter-warp">
+					<feTurbulence type="fractalNoise" id="noise" baseFrequency="0" numOctaves="1" result="warp" stitchTiles="stitch"></feTurbulence>
+					<feOffset dx="0" dy="0" id="offset" result="warpOffset" ></feOffset>
+					<feDisplacementMap xChannelSelector="R" yChannelSelector="G" scale="600" in="SourceGraphic" in2="warpOffset"></feDisplacementMap>
+				</filter>
+			</defs>
+		</svg>
     <a href="/"><img id="logo" class="logo mobile-logo" src="images/studiomosaiclogo.svg"></a>
     <a class="icon-matrix" href="work"><img src="images/matrix.svg"></a>
 
@@ -68,11 +76,11 @@ Designed and developed by:
       <button class="hamburger index hamburger--squeeze" type="button">
         <span class="hamburger-box"><span class="hamburger-inner"></span></span>
       </button>
-
+      <div class="icon-arrow-down1" style="text-transform:uppercase;left:2em; bottom:2em;position:fixed; width:1em;    line-height: 1.25;">STUDIO MOSAIC <span style="letter-spacing: 6px;">2017<span></div>
       <span class="icon-arrow-down"><a href="#features" class="u-text-unstyled">&#8595;</a></span>
       <span class="icon-arrow-up"><a href="#hero" class="u-text-unstyled">&#8593;</a></span>
 
-      <svg class="hidden">
+      <!-- <svg class="hidden">
         <symbol id="icon-arrow" viewBox="0 0 24 24">
           <title>arrow</title>
           <polygon points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "/>
@@ -85,41 +93,39 @@ Designed and developed by:
           <title>shape demo</title>
           <path d="M 6.144,74.1 C 20.4,107.4 70.13,94.33 94.22,95.74 121.3,97.41 130.8,101.1 154.7,99.38 178.6,97.72 201.9,78.95 199.4,46.86 197.1,14.96 174.9,4.781 161.4,1.827 147.9,-1.128 119.8,8.284 105.6,8.766 85.34,9.449 81.91,7.628 51.08,2.334 17.26,-3.482 -8.105,40.84 6.144,74.1 Z" />
         </symbol>
-      </svg>
+      </svg> -->
       <main>
-        <div class="morph-wrap">
-          <svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
+        <div class="morph-wrap morph">
+          <!-- <svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
             <path d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z"/>
-          </svg>
+          </svg> -->
         </div>
 
         <div class="content-wrap">
-          <div class="content content--layout content--layout-1">
-            <img class="content__img" src="images/book_paradoxlost.jpg" alt="Some image" />
-            <h3 style="font-size:4em;font-family:rasmusregular;"class="content__title">
-              <span class="char S explode">S</span>
-              <span class="char T explode">t</span>
-              <span class="char U explode">u</span>
-              <span class="char D explode">d</span>
-              <span class="char I explode">i</span>
-              <span class="char O explode">o</span>
+          <div class="content content--layout content--layout-4 wow fadeInUp">
+            <img class="content__img" src="images/album_sunsongs.jpg" alt="Some image" />
+            <h3 style="font-size:4.5em;font-family:rasmusregular;" class="content__title">
+              <span class="char S">S</span>
+              <span class="char U">u</span>
+              <span class="char N">n</span>
               <span class="space" style="letter-spacing: -0.3em;visibility:hidden;">-</span>
-              <span class="char M explode">M</span>
-              <span class="char O explode">o</span>
-              <span class="char S explode">s</span>
-              <span class="char A explode">a</span>
-              <span class="char I explode">i</span>
-              <span class="char C explode">c</span>
+              <span class="char S">S</span>
+              <span class="char O">o</span>
+              <span class="char N">n</span>
+              <span class="char G">g</span>
+              <span class="char S">s</span>
             </h3>
-            <p class="content__author">Lost Paradox</p>
-            <p class="content__desc">A Chicago collective. <br/>Art. Music. Design.</p>
-            <a href="#" class="content__link">Discover</a>
+            <p class="content__author">Latest Release</p>
+            <p class="content__desc" style="width:3em;">
+              haiku goes here lorem ipsum lorem ipsum
+            </p>
+            <a href="#" class="content__link">Listen Now</a>
           </div>
         </div>
 
-<div class="content-wrap">
+<!-- <div class="content-wrap">
   <div class="content content--layout content--layout-2 wow fadeInUp">
-    <img class="content__img" src="img/4.jpg" alt="Some image" />
+    <img class="content__img" src="images/book_paradoxlost.jpg" alt="Some image" />
     <h3 class="content__title">bunch</h3>
     <p class="content__author">Nikimo Westlane</p>
     <p class="content__desc">The neverending quest, once and forever.</p>
@@ -128,7 +134,7 @@ Designed and developed by:
 </div>
 <div class="content-wrap">
   <div class="content content--layout content--layout-3 wow fadeInUp">
-    <img class="content__img" src="img/1.jpg" alt="Some image" />
+    <img class="content__img" src="images/book_paradoxlost.jpg" alt="Some image" />
     <h3 class="content__title">revert</h3>
     <p class="content__author">Gregory Mourisha</p>
     <p class="content__desc">Finding the heart when paradise is lost.</p>
@@ -137,8 +143,22 @@ Designed and developed by:
 </div>
 <div class="content-wrap">
   <div class="content content--layout content--layout-4 wow fadeInUp">
-    <img class="content__img" src="img/2.jpg" alt="Some image" />
-    <h3 class="content__title">east</h3>
+    <img class="content__img" src="images/album_sunsongs.jpg" alt="Some image" />
+    <h3 class="content__title" style="font-size:4em;font-family:rasmusregular;">
+      <span class="char S">S</span>
+      <span class="char T">t</span>
+      <span class="char U">u</span>
+      <span class="char D">d</span>
+      <span class="char I">i</span>
+      <span class="char O">o</span>
+      <span class="space" style="letter-spacing: -0.3em;visibility:hidden;">-</span>
+      <span class="char M">M</span>
+      <span class="char O">o</span>
+      <span class="char S">s</span>
+      <span class="char A">a</span>
+      <span class="char I">i</span>
+      <span class="char C">c</span>
+    </h3>
     <p class="content__author">Walter Mastricht</p>
     <p class="content__desc">The outer bounds of the world, from within.</p>
     <a href="#" class="content__link">Discover</a>
@@ -146,21 +166,21 @@ Designed and developed by:
 </div>
 <div class="content-wrap">
   <div class="content content--layout content--layout-1">
-    <img class="content__img" src="img/5.jpg" alt="Some image" />
+    <img class="content__img" src="images/book_paradoxlost.jpg" alt="Some image" />
     <h3 class="content__title">frank</h3>
     <p class="content__author">Frank Cherry</p>
     <p class="content__desc">Frank's work and nothing more.</p>
     <a href="#" class="content__link">Discover</a>
   </div>
-</div>
+</div> -->
       </main>
 
-      <section class="content--related"><h1>testing</h1></section>
+      <section class="content--related"></section>
 
     </div>
     </section>
 
-    <section id="features1">
+    <section id="features">
       <div class="container">
         <div class="row">
           <div class="twelve columns">
