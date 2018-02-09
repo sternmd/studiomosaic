@@ -1,7 +1,6 @@
 var gulp        = require('gulp'),
     sass        = require('gulp-sass'),
     clean       = require('gulp-clean'),
-    cache       = require('gulp-cache'),
     concat      = require('gulp-concat'),
     jshint      = require('gulp-jshint'),
     uglify      = require('gulp-uglify'),
@@ -12,7 +11,6 @@ var gulp        = require('gulp'),
     browserSync = require('browser-sync'),
     sourcemaps  = require('gulp-sourcemaps'),
     minify      = require('gulp-minify-css');
-
 
 gulp.task('clean-styles', function () {
   return gulp.src('src/build/*.css', {read: false})
