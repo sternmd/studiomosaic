@@ -45,6 +45,12 @@
 
 /* On index only, Display menu on index in mobile view*/
 
+@include keyframes(bg-gradient) {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+
 @media (max-width: 600px) and (min-width: 0px) {
   .hamburger.index {
     display: none;
@@ -53,6 +59,11 @@
     opacity: 1;
     visibility: visible;
     overflow: hidden;
+    background: linear-gradient(231deg, #fdbb2d, #b21f1f, #1a2a6c, #111, #111);
+    background-size: 1600% 1600%;
+    -webkit-animation: bg-gradient 40s ease infinite;
+    -moz-animation: bg-gradient 40s ease infinite;
+    animation: bg-gradient 40s ease infinite;
   }
 
   #features {
@@ -64,6 +75,11 @@
     font-size: 4.5rem;
     opacity: 1;
     visibility: visible;
+    background: linear-gradient(231deg, #fdbb2d, #b21f1f, #1a2a6c, #111, #111);
+    background-size: 1600% 1600%;
+    -webkit-animation: bg-gradient 40s ease infinite;
+    -moz-animation: bg-gradient 40s ease infinite;
+    animation: bg-gradient 40s ease infinite;
   }
   .hamburger.index {
     display: none;
