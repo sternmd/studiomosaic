@@ -1426,7 +1426,7 @@ main {
     -webkit-animation: bg-gradient 40s ease infinite;
     -moz-animation: bg-gradient 40s ease infinite;
     animation: bg-gradient 40s ease infinite; }
-  #features {
+  #features, #hero {
     display: none; } }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 780px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
