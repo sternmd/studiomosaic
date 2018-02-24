@@ -49,9 +49,11 @@
 
   &__image {
     display: none;
-    position: absolute;
+    position: fixed;
     width: 50%;
     right: -12em;
+    top: 50%;
+    margin-top: -15%;
     z-index: -1;
     transition: opacity 2s ease-in;
   }
