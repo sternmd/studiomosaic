@@ -6,124 +6,177 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+
 <url>
   <loc>http://studiomosaic.org/</loc>
-  <lastmod>2017-04-16T03:47:01+00:00</lastmod>
+  <lastmod>2018-02-24T01:59:00+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
   <loc>http://studiomosaic.org/work</loc>
-  <lastmod>2017-04-15T04:20:58+00:00</lastmod>
+  <lastmod>2017-11-13T18:41:58+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://studiomosaic.org/about</loc>
-  <lastmod>2017-03-07T02:23:11+00:00</lastmod>
+  <lastmod>2017-07-29T21:33:59+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://studiomosaic.org/contact</loc>
-  <lastmod>2017-03-07T02:23:12+00:00</lastmod>
+  <lastmod>2018-02-24T05:37:15+00:00</lastmod>
+  <priority>0.80</priority>
 </url>
 <url>
   <loc>http://studiomosaic.org/blog/</loc>
-  <lastmod>2017-04-23T00:22:30+00:00</lastmod>
+  <lastmod>2018-03-03T21:01:19+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://studiomosaic.org/side-trips-vol-1</loc>
+  <lastmod>2017-11-13T19:01:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://studiomosaic.org/sun-songs</loc>
+  <lastmod>2017-08-26T19:47:37+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://studiomosaic.org/tales-from-the-lost-jukebox</loc>
-  <lastmod>2017-04-16T03:47:03+00:00</lastmod>
+  <lastmod>2017-11-13T02:29:00+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://studiomosaic.org/songs-for-people-like-me</loc>
-  <lastmod>2017-04-15T04:07:00+00:00</lastmod>
-</url>
-<url>
-  <loc>http://studiomosaic.org/downtime-classic</loc>
-  <lastmod>2017-04-16T03:37:05+00:00</lastmod>
-</url>
-<url>
-  <loc>http://studiomosaic.org/blog/graphic-novels</loc>
-  <lastmod>2017-02-09T03:21:01+00:00</lastmod>
-</url>
-<url>
-  <loc>http://studiomosaic.org/typography-as-meta-communication</loc>
-  <lastmod>2017-02-09T03:20:40+00:00</lastmod>
-</url>
-<url>
-  <loc>http://studiomosaic.org/chicago-above-the-clouds</loc>
-  <lastmod>2017-02-09T03:20:39+00:00</lastmod>
-</url>
-<url>
-  <loc>http://studiomosaic.org/ser-libre</loc>
-  <lastmod>2017-02-25T05:10:53+00:00</lastmod>
-</url>
-<url>
-  <loc>http://studiomosaic.org/omnium-peak</loc>
-  <lastmod>2017-02-09T03:20:40+00:00</lastmod>
-</url>
-<url>
-  <loc>http://studiomosaic.org/aftertaste-ep</loc>
-  <lastmod>2017-02-09T03:20:39+00:00</lastmod>
+  <lastmod>2017-04-28T04:11:42+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://studiomosaic.org/ravedeath</loc>
   <lastmod>2017-02-09T03:20:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://studiomosaic.org/chicago-above-the-clouds</loc>
+  <lastmod>2018-02-10T21:35:53+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://studiomosaic.org/downtime-classic</loc>
+  <lastmod>2017-11-13T02:28:52+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://studiomosaic.org/japanoise</loc>
-  <lastmod>2017-04-16T03:37:06+00:00</lastmod>
+  <lastmod>2017-06-18T22:06:41+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://studiomosaic.org/aftertaste-ep</loc>
+  <lastmod>2018-02-10T21:35:47+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://studiomosaic.org/ser-libre</loc>
+  <lastmod>2017-02-25T05:10:53+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://studiomosaic.org/paradox-lost</loc>
   <lastmod>2017-02-09T03:20:40+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://studiomosaic.org/fading-into-nature</loc>
   <lastmod>2017-02-09T03:20:39+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://studiomosaic.org/omnium-peak</loc>
+  <lastmod>2017-02-09T03:20:40+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://studiomosaic.org/typography-as-meta-communication</loc>
+  <lastmod>2017-02-09T03:20:40+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://studiomosaic.org/subtle-euphoria</loc>
   <lastmod>2017-02-09T03:20:40+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://studiomosaic.org/blog/index</loc>
-  <lastmod>2017-04-23T00:22:30+00:00</lastmod>
+  <lastmod>2018-03-03T21:01:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://studiomosaic.org/blog/typeforce-9</loc>
+  <lastmod>2018-03-03T21:01:19+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://studiomosaic.org/blog/studio-mosaic-opens-shop</loc>
+  <lastmod>2017-08-08T23:04:27+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://studiomosaic.org/blog/basquiat-before-basquiat</loc>
-  <lastmod>2017-04-23T00:22:19+00:00</lastmod>
+  <lastmod>2017-08-08T23:04:26+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://studiomosaic.org/blog/typeforce-8</loc>
-  <lastmod>2017-02-22T00:19:00+00:00</lastmod>
+  <lastmod>2017-08-08T23:04:27+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://studiomosaic.org/blog/2016-films</loc>
-  <lastmod>2017-02-09T03:21:01+00:00</lastmod>
+  <lastmod>2017-08-08T04:09:54+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://studiomosaic.org/blog/jack-kerouac-taoism</loc>
+  <lastmod>2017-08-08T23:04:27+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://studiomosaic.org/blog/graphic-novels</loc>
   <lastmod>2017-02-09T03:21:01+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://studiomosaic.org/blog/rooted-in-soil</loc>
-  <lastmod>2017-02-09T03:21:01+00:00</lastmod>
+  <lastmod>2017-08-08T23:04:27+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://studiomosaic.org/blog/typeforce-6</loc>
-  <lastmod>2017-02-09T03:21:02+00:00</lastmod>
+  <lastmod>2017-08-08T23:04:27+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://studiomosaic.org/blog/everythings-for-sale</loc>
-  <lastmod>2017-02-09T03:21:01+00:00</lastmod>
+  <lastmod>2017-08-08T23:04:26+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://studiomosaic.org/blog/sofia-leiby</loc>
-  <lastmod>2017-02-09T03:21:02+00:00</lastmod>
+  <lastmod>2017-08-08T23:04:27+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://studiomosaic.org/blog/megan-jean-pryce</loc>
-  <lastmod>2017-02-09T03:21:01+00:00</lastmod>
+  <lastmod>2017-08-08T23:04:27+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
 <url>
   <loc>http://studiomosaic.org/blog/typeforce-5</loc>
-  <lastmod>2017-02-09T03:21:02+00:00</lastmod>
+  <lastmod>2017-08-08T23:04:27+00:00</lastmod>
+  <priority>0.64</priority>
 </url>
+
+
 </urlset>
