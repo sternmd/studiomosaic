@@ -7,7 +7,7 @@ $('.category').off('click.category').on('click.category', function(e){
 // Isotope work
 var $grid = $('.grid').isotope({
   itemSelector: '.grid-item',
-  sortBy: 'random',
+  sortBy: 'original-order',
   percentPosition: true,
   masonry: {
     // use outer width of grid-sizer for columnWidth
