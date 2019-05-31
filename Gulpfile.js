@@ -10,7 +10,8 @@ var gulp        = require('gulp'),
     stylish     = require('jshint-stylish'),
     browserSync = require('browser-sync'),
     sourcemaps  = require('gulp-sourcemaps'),
-    minify      = require('gulp-minify-css');
+    minify      = require('gulp-minify-css'),
+    open        = require('gulp-open');
 
 gulp.task('clean-styles', function () {
   return gulp.src('src/build/*.css', {read: false})
@@ -58,8 +59,17 @@ gulp.task('browser-sync', ['styles', 'scripts'], function() {
         server: {
             baseDir: './'
         },
-        host: "localhost"
+        host: "localhost:8080"
     });
+});
+
+gulp.task('open', function(){
+    var options = {
+        uri: 'localhost:8080',
+        app: 'google chrome'
+    };
+    gulp.src(__filename)
+        .pipe(open(options));
 });
 
 gulp.task('watch', function() {
@@ -72,5 +82,5 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', function() {
-    gulp.start('styles', 'scripts', 'browser-sync', 'watch');
+    gulp.start('styles', 'scripts', 'browser-sync', 'watch', 'open');
 });
