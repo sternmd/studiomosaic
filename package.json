@@ -30,6 +30,7 @@
     "jshint-stylish": "^2.2.1"
   },
   "dependencies": {
+    "axios": "^0.19.0",
     "clean-css": "^4.2.1",
     "tar": "^4.4.8"
   }
